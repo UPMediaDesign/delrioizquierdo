@@ -34,10 +34,9 @@
 
 <div id="boxes">
     <div id="spanish" class="container">
-
-    	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo_blue.png" alt="" class="img-responsive">
-
     	<div class="row">
+            
+            <img src="<?php echo get_bloginfo('template_directory')?>/images/logo_blue.png" alt="" class="img-responsive">
 
         	<div class="col-md-7 col-esp big-box box">
             	<div class="inside" style="background-image:url(<?php echo $bigbg[0]?>); background-repeat: no-repeat; background-size: cover;">
@@ -72,29 +71,6 @@
 
             <div class="clear"></div>
 
-<?php /*
-        	<div class="col-md-7 col-esp mini-box box contacto">
-            	<div class="inside">
-                    <div class="col-md-12 clr-bg04 col-box">
-                        <h2><a href="<?php echo get_page_link(15)?>" rel="nofollow" title="Contacto"><strong>Contacto</strong></a></h2>
-                        <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
-                        <div class="pull-right">
-                            <a href="<?php echo get_page_link(15)?>" class="read-more-box" rel="nofollow" title="Contacto">ver más <span class="fa fa-arrow-right fa-fw"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        	<div class="col-md-5 col-esp mini-half-box box noticias">
-            	<div class="col-md-12 clr-bg05 col-box">
-                	<h2><a href="<?php echo get_bloginfo('url')?>/category/noticias/" title="Ir a Noticias" rel="blog"><strong>Noticias</strong></a></h2>
-                	<p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
-                    <div class="pull-right">
-                        <a href="<?php echo get_bloginfo('url')?>/category/noticias/" class="read-more-box" title="Ir a Noticias" rel="blog">ver más <span class="fa fa-arrow-right fa-fw"></span></a>
-                    </div>
-                </div>
-            </div>
-*/ ?>
             <div class="insiderfoot col-xs-12">
                 <p><strong>Rosario Norte 615, Oficina 2004.</strong> Las Condes, Santiago, Chile · <strong>Tel (+56-2)2591 8800</strong> · Fax (+56-2)2591 8801 · CP: 7561211</p>
             </div>
@@ -105,19 +81,22 @@
     <div id="english" class="container">
     	<div class="row">
         	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo_blue.png" alt="" class="img-responsive">
-        <div class="row">
+
             <div class="col-md-7 col-esp big-box box">
                 <div class="inside" style="background-image: url(<?php echo $bigbg[0]?>);  background-repeat: no-repeat; background-size: cover;">
+
                     <div class="col-md-5 clr-bgop01 col-box">
                         <h2><a href="<?php echo get_page_link(4)?>" rel="nofollow" title="Ir a Nuestra Firma">Nuestra <br><strong>Firma</strong></a></h2>
                         <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
                     </div>
+
                     <div class="pull-right">
                         <a href="<?php echo get_page_link(4)?>" rel="nofollow" title="Ir a Nuestra Firma" class="read-more-box">Ver más <span class="fa fa-arrow-right fa-fw"></span></a>
                     </div>
+
                 </div>
-                
             </div>
+
             <div class="col-md-5 col-xs-6 col-esp half-box box area" style="background-image:url(<?php echo $midbg[0]?>); background-repeat: no-repeat; background-size: cover;">
                 <div class="col-md-7 clr-bg02 col-box">
                     <h2><a href="<?php echo get_page_link(9)?>">Áreas de <br><strong>Práctica</strong></a></h2>
@@ -127,6 +106,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover;">
                 <div class="col-md-7 clr-bg03 col-box">
                     <h2><a href="<?php echo get_page_link(11)?>"><strong>Abogados</strong></a></h2>
@@ -136,35 +116,13 @@
                 </div>
             </div>
             <div class="clear"></div>
-<?php  /*         <div class="col-md-7 col-esp mini-box box contacto">
-                <div class="inside">
-                    <div class="col-md-12 clr-bg04 col-box">
-                        <h2><a href="<?php //echo get_page_link(15)?>" rel="nofollow" title="Contacto"><strong>Contacto</strong></a></h2>
-                        <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
-                        <div class="pull-right">
-                            <a href="<?php //echo get_page_link(15)?>" class="read-more-box" rel="nofollow" title="Contacto">ver más <span class="fa fa-arrow-right fa-fw"></span></a>
-                        </div>
-                    </div>
-
-                </div>
-                            </div>
-            <div class="col-md-5 col-esp mini-half-box box noticias">
-                <div class="col-md-12 clr-bg05 col-box">
-                    <h2><a href="<?php //echo get_bloginfo('url')?>/category/noticias/" title="Ir a Noticias" rel="blog"><strong>Noticias</strong></a></h2>
-                    <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
-                    <div class="pull-right">
-                        <a href="<?php //echo get_bloginfo('url')?>/category/noticias/" class="read-more-box" title="Ir a Noticias" rel="blog">ver más <span class="fa fa-arrow-right fa-fw"></span></a>
-                    </div>
-                </div>
-            </div> */?>  
 
             <div class="insiderfoot col-xs-12">
                 <p><strong>Rosario Norte 615, Oficina 2004.</strong> Las Condes, Santiago, Chile · <strong>Tel (+56-2)2591 8800</strong> · Fax (+56-2)2591 8801 · CP: 7561211</p>
             </div>
             
-        </div>
-    </div>
-    
+
+    </div>  
 </div>   
 
 <?php
@@ -194,70 +152,5 @@ function langChooser(lang){
   	});
 }
 </script>
-<?php /*
-<script>
-    (function($){//begin closure
 
-    //variable to keep the index count
-    var count = 0;
-
-    //Time in milliseconds(currently set to 4 seconds)for the setInterval Function
-    //
-    var milliseconds = 8000;
-
-    //Time in milliseconds for the animated transition.
-    var transitionTime = 2000;    
-
-    //selects an element with an id of target
-    //use .className if you want to select an element by a className
-    var selector = "#target";
-
-    setInterval(function(){
-
-    //Array to store image urls(replace with the urls of your images)
-    var images= ["wp-content/themes/dri/images/bg_home_1.jpg",
-                 "wp-content/themes/dri/images/bg_home_2.jpg",
-                 "wp-content/themes/dri/images/bg_home_3.jpg"];
-
-    //create a new image
-    var tempImage = new Image();
-
-    //add the image src
-    tempImage.src = images[count];
-
-    //on load event for the image object
-    jQuery(tempImage).on("load",function(){//begin event
-
-    //set the opacity of the element to zero(transparent),
-    //animate it to opaque by setting its opacity to 1
-    jQuery(selector).css("opacity","0.5")
-            .animate({ opacity: 1 }, { duration: transitionTime });
-
-    //change the background image
-    jQuery(selector).css("background-image", "url(" + tempImage.src +")");
-
-    });//end event
-
-    //If the count is less than the image array length - 1,
-    //Explanation: Array indexes start at 0 so you will need to subtract
-    //1 to match array index. If you do not subract one then the code will
-    //try and load images[2] which doesn't exist.
-    if(count < images.length - 1){
-
-    //increment the count
-    count++;
-
-    }
-    else{
-
-    //reset count to 0 when the the last index is reached.
-    count = 0;
-
-    }
-
-    },milliseconds);//<-- pass in the interval time to execute the code
-
-    })(jQuery);//end closure
-</script>
-*/?>
 <?php get_footer()?>

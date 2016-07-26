@@ -7,15 +7,9 @@
 	<div class="row">
 
 		<div class="col-md-10 col-md-offset-1 liner-bottom bajada">
-			<?php $bajadas = get_field('bajada_preheader', $post->ID); ?>
-                <?php $countbajadas = 0 ?>
-                <?php foreach ($bajadas as $bajada): ?>
-                <?php $countbajadas++ ?>
 
-			 	<h2><?php echo $bajada['titular_bajada']?></h2>
-                <h3><?php echo $bajada['apoyo_bajada']?></h3>
-
-            <?php endforeach;?>
+	      <h2><?php echo get_field('titular_bajada', $post->ID);?></h2>
+	      <h3><?php echo get_field('apoyo_bajada', $post->ID);?></h3>
 		</div>
 
 	</div>
@@ -24,16 +18,8 @@
 <div class="container-fluid principal">
 	<div class="row">
 
-		<?php $services = get_field('imagen_destacada_interior', $post->ID); ?>
-		<?php $countservices = 0 ?>
-		<?php foreach($services as $service):?>
-		<?php $countservices++ ?>
-                    
-		<div class="col-md-12 intro-content col-esp">
-			<img style="max-width: 1280px; max-height: 320px;" src="<?php echo $service['imagen_destacada']?>" alt="<?php echo $post->post_title;?>">
+		<div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: 100%; min-height: 320px; background-repeat: no-repeat; margin-top: 20px;">
 		</div>
-
-		<?php endforeach; ?>
 
 	</div>
 </div>

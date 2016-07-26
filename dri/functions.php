@@ -6,7 +6,7 @@ add_image_size('headingmid', 1280, 315, true );
 add_image_size('footimage', 291, 283, true );
 add_image_size('staff', 385, 600, true );
 add_image_size('bigbox', 663, 375, true );
-add_image_size('mediumbox', 488, 177,true );
+add_image_size('mediumbox', 488, 232,true );
 //add_image_size('squared', 1080, 1080, true );
 }
 /* 

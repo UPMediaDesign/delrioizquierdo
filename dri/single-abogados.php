@@ -8,27 +8,22 @@
 
         <div class="col-md-10 col-md-offset-1 liner-bottom bajada">
                 <h2><?php echo $post->post_title;?></h2>
-                <?php $datos = get_field('datos_abogado', $post->ID); ?>
-                <?php $countdatos = 0 ?>
-                <?php foreach ($datos as $dato): ?>
-                <?php $countdatos++ ?>
-                <h3><?php echo $dato['cargo_abogado']?></h3>
-                <?php endforeach;?>
+                <h3><?php echo get_field('cargo_abogado', $post->ID);?></h3>
         </div>
 
         <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file mobile">
             <!-- Visible en Mobile -->
             <aside class="col-esp col-xs-12 mobile">
                 <figure class="col-xs-6 data col-esp">
+
                     <h2><?php echo $post->post_title;?></h2>
-                    <?php foreach ($datos as $dato): ?>
-                    <h3><?php echo $dato['cargo_abogado']?></h3>
-                    <a href="mailto:<?php echo $dato['mail_abogado']?>" rel="external" title="Enviar Correo a <?php echo $post->post_title?>">
+                    <h3><?php echo get_field('cargo_abogado', $post->ID);?></h3>
+                    <a href="mailto:<?php echo get_field('mail_abogado', $post->ID);?>" rel="external" title="Enviar Correo a <?php echo $post->post_title?>">
                         <span class="fa fa-envelope"> Contactar</span>
                     </a>
-                    <?php endforeach;?>
+                    
                 </figure>
-                <img src="<?php echo $dato['foto_perfil']?>" alt="<?php echo $post->post_title; ?>" class="col-xs-6 col-esp">
+                <img src="<?php echo get_field('foto_perfil', $post->ID);?>" alt="<?php echo $post->post_title; ?>" class="col-xs-6 col-esp">
             </aside>
         </figure>
 
@@ -39,56 +34,29 @@
         <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file">
             <!-- Visible en Desktop -->
             <aside class="col-md-5 col-esp desktop">
-                <img src="<?php echo $dato['foto_perfil']?>" alt="<?php echo $post->post_title; ?>">
+                <img src="<?php echo get_field('foto_perfil', $post->ID);?>" alt="<?php echo $post->post_title; ?>">
                 <figcaption class="clr-bg05 data">
-                    <h2><?php echo $post->post_title;?></h2>
-                    <?php foreach ($datos as $dato): ?>
-                    <h3><?php echo $dato['cargo_abogado']?></h3>
-                    <a href="mailto:<?php echo $dato['mail_abogado']?>" rel="external" title="Enviar Correo a <?php echo $post->post_title?>"><?php echo $dato['mail_abogado']?></a>
-                    <?php endforeach;?>
+                    <h2><?php echo $post->post_title;?></h2>   
+                    <h3><?php echo get_field('cargo_abogado', $post->ID);?></h3>
+                    <a href="mailto:<?php echo get_field('mail_abogado', $post->ID);?>" rel="external" title="Enviar Correo a <?php echo $post->post_title?>"><?php echo get_field('mail_abogado', $post->ID);?></a>
                 </figcaption>
             </aside>
 
             <figcaption class="col-md-7 col-esp clr-bg06 info">
-                <p><?php echo $post->post_content ?></p>
-                <?php foreach ($datos as $dato): ?>
-                <p><?php echo $dato['membresia_abogado']?></p>
-                <p><strong>Idiomas:</strong> <?php echo $dato['manejo_idiomatico']?></p>
-                <?php endforeach;?>
+                <p><?php echo $post->post_content ?></p>        
+                <p><?php echo get_field('membresia_abogado', $post->ID);?></p>
+                <p><strong>Idiomas:</strong> <?php echo get_field('manejo_idiomatico', $post->ID);?></p>
             </figcaption>
 
         </figure>
 
-        <?php /*
-        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row">
+        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo get_field('imagen_referencia', $post->ID);?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">
+            
             <div class="col-md-8 col-sm-8 clr-bg03 quote-text">
-                <?php $datos = get_field('datos_abogado', $post->ID); ?>
-                <?php $countdatos = 0 ?>
-                <?php foreach ($datos as $dato): ?>
-                <?php $countdatos++ ?>
-                <p><?php echo $dato['parrafo_referencia']?></p>
-                <?php endforeach;?>
-            </div>
-            <div class="col-md-4 col-sm-4 prefoot-image lawimg">
-                <?php foreach ($datos as $dato): ?>
-                <img src="<?php echo $dato['imagen_referencia'] ?>" alt="">
-                <?php endforeach;?>
-            </div>
-        </div>
-        */ ?>
-
-        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo $dato['imagen_referencia'] ?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">
-            <div class="col-md-8 col-sm-8 clr-bg03 quote-text">
-                <?php $datos = get_field('datos_abogado', $post->ID); ?>
-                <?php $countdatos = 0 ?>
-                <?php foreach ($datos as $dato): ?>
-                <?php $countdatos++ ?>
-                <p><?php echo $dato['parrafo_referencia']?></p>
-                <?php endforeach;?>
+                <p><?php echo get_field('parrafo_de_referencia', $post->ID);?></p>
             </div>
             
         </div>
-
     </div>
 </main>
 
