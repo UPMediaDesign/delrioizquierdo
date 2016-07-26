@@ -1,0 +1,150 @@
+@charset "utf-8";
+/*
+Theme Name: Del Río Izquierdo
+Theme URL: dri.upmedia.cl
+Description: Tema para sitio Del Río Izquierdo Abogados. 
+Forjado en los hornos de UPMEDIA por Carlos Peña aka @CarlosChasca.
+Version: 1.0 (Revised by Carlos Peña aka @CarlosChasca)
+Author: Upmedia (Carlos Peña aka @CarlosChasca) Sitio Corporativo por UPMEDIA
+Author URL: http://upmedia.cl
+*/
+
+#menu-navegacion li a, #menu-navegacion-b li a, h1, h2 { text-transform: uppercase }
+h1, h2, h3, h4 { font-family: Raleway, helvetica, arial, sans-serif }
+
+* { padding: 0; margin: 0 }
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0 }
+.clearfix { display: inline-block }
+html[xmlns] .clearfix { display: block }
+* html .clearfix { height: 1% }
+
+.clear { clear: both }
+.izq, .left { float: left }
+.der, .right { float: right }
+
+.alignleft { display: inline; float: left; margin-right: 15px }
+.alignright { display: inline; float: right; margin-left: 15px }
+.aligncenter, .megacontainer { margin-right: auto; margin-left: auto }
+.aligncenter { clear: both; display: block }
+
+b, strong { font-weight: 700 }
+em, i { font-style: italic }
+small { font-size: 10px }
+p { font-family: Fira Sans, helvetica, arial, sans-serif; color: #323232 }
+
+.separator { padding: 15px 0 }
+.miniseparator { padding-bottom: 10px }
+.microseparator { padding-bottom: 5px }
+.border { padding: 15px 15px 0; margin-bottom: 15px; border-bottom: 1px solid #ccc  }
+.bordery{ border: 1px solid #c2c2c2; border-left: 340px solid #fee00a; margin: 0 15px;}
+
+body { font-family: Raleway, Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; background-color: #fff; color: #343333 }
+
+.callout { border-bottom: 1px solid #ccc; padding: 20px; border-left: 6px solid #e21717 }
+blockquote , .callout  { background-color: #f2f2f2 }
+blockquote { border-left-color: #33567c }
+blockquote li { list-style-position: inside!important }
+
+.megacontainer { padding-right: 15px; padding-left: 15px; max-width: 1356px; }
+.container { max-width: 1170px }
+.nocontainer{ padding-right: 15px; padding-left: 15px; max-width: 100% }
+
+.col-lg-20, .col-md-20, .col-sm-20, .col-xs-20 { width: 20%; float: left; padding: 0 15px }
+.col-esp { padding: 0 }
+
+blockquote { border-left-color: #33567c }
+blockquote li { list-style-position: inside!important }
+
+.modal { z-index: 999999999 }
+.modal.modal-wide .modal-dialog { width: 90% }
+.modal-wide .modal-body { overflow-y: auto }
+.modal-backdrop.in { z-index: 9999; background-color: rgba(0, 0, 0, .9); opacity: 1 }
+.modal-lg { width: 80%; margin-top: 100px }
+.modal .close {color: #b40d65; font-size: 70px; margin: 0 0px; z-index: 99999; position: absolute; right: 10px; top: -70px; opacity: 1; text-shadow: none; }
+.modal-content { /*background-image: url(images/ng-bars.jpg); background-color: #525252*/ }
+.modal-body { padding: 50px }
+
+h3 { font-weight: 900; }
+.h4, .h5, .h6, h4, h5, h6 { margin-top: 0 }
+
+.btn-primary{ background-color: transparent; border: 1px solid #fff; transition:all .3s ease}
+.btn-primary:hover{ background-color:#fee00a; color:#000}
+.btn-secondary { border-color: #000; color: #000;}
+.btn-secondary:hover{ background-color:#fee00a}
+.btn-primary.dsc {background-color: #35609b; border: 1px solid #fff; transition: all .3s ease; border-radius: 0; font-size: 20px; font-family: helvetica neue, helvetica, arial, sans-serif; font-weight: 300; font-style: italic; padding: 10px 10px; margin: 3px;}
+
+/* Web Fonts */
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700,300,300italic,700italic|Alegreya+Sans+SC:400,500|Poppins:700,500);
+
+
+/*************************************************************************************/
+/***********************************Loader Spiner*************************************/
+/*************************************************************************************/
+
+#loader-wrapper{background-color: #b40d65; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000000; bottom: 0; right: 0; }
+#loader-wrapper img{top: 0;  bottom: 0; margin: auto auto; display: block; position: absolute; left: 0; right: 0; padding-top:5%}
+
+#loader{display: inline-block; position: absolute; left: 0; top: 44%; width: 60px; height: 60px; margin: 0 auto; border-radius: 50%; border: 3px solid transparent; border-top-color: #fff;border-bottom-color: #fff; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite; right: 0 }
+#loader:before{top: 5px; left: 5px; right: 5px; bottom: 5px; border: 3px solid transparent; border-top-color: #9bdae5; -webkit-animation: spin 3s linear infinite; animation: spin 3s linear infinite;}
+#loader:after, #loader:before{content: ""; position: absolute; border-radius: 50% }
+#loader:after{top: 15px; left: 15px; right: 15px; bottom: 15px; border: 3px solid transparent; border-top-color: #fff; -webkit-animation: spin 1.5s linear infinite; animation: spin 1.5s linear infinite } @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0);} 100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg);} } @keyframes spin { 0% { -webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0) } 100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg);} }
+
+/*************************************************************************************/
+/************************************ Pallette ***************************************/
+/*************************************************************************************/
+/* Color */
+.highorange	{background-color:#c34614;}
+.loworange	{background-color:#cb6941;}
+.highblue	{background-color:#006893;}
+.lowblue	{background-color:#839db4;}
+.mediumblue	{background-color:#526576;}
+
+/* Text */
+.clr0		{color:#ffffff;}
+.clr1		{color:#c34614;}
+.clr2		{color:#cb6941;}
+.clr3		{color:#006893;}
+.clr4		{color:#839db4;}
+.clr5		{color:#526576;}
+
+/*************************************************************************************/
+/************************************ Entrada ****************************************/
+/*************************************************************************************/
+
+
+/*************************************************************************************/
+/************************************* Header ****************************************/
+/*************************************************************************************/
+
+/* Header Inicio */
+.head-view{float:left; display:block;}
+.head-view a{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.head-view a:hover{}
+.head-view img{max-width:369px; width:100%; height: auto; padding:;}
+
+/* Home */
+.service-content{}
+
+.goabout{background-image:url(images/.jpg); font-size:px; text-align: left; line-height: em;}
+.goabout figure{padding:20px;}
+.goabout header{border-bottom:1px solid:#ffffff; }
+.goabout h1 a{font-family:Poppins, helvetica, arial, sans-serif; font-size:30px; text-align:left; font-weight:500;line-height: em; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.goabout h1 a strong{font-weight: 700;}
+.goabout h1 a:hover{opacity:.3;}
+.goabout p{font-family: Fira Sans, helvetica, arial, sans-serif; font-weight:400; font-size:25px;}
+
+.goarea{}
+
+.golawyers{}
+
+.contact-area{}
+
+.contact{}
+
+.gonews{}
+
+/* Header Páginas Interiores */
+
+
+
+
