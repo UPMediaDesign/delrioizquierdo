@@ -17,7 +17,7 @@ Template Name: Abogados
 
 		</div>
 
-    <div class="col-md-10 col-md-offset-1 hard-content">
+    <div class="col-md-8 col-md-offset-2 hard-content col-esp">
       <p><?php echo $post->post_excerpt; ?></p>
     </div>
 

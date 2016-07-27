@@ -320,10 +320,10 @@
 	"buffers":
 	[
 		{
-			"file": "dri/single-abogados.php",
+			"file": "dri/page.php",
 			"settings":
 			{
-				"buffer_size": 4301,
+				"buffer_size": 1166,
 				"line_ending": "Unix"
 			}
 		},
@@ -331,7 +331,7 @@
 			"file": "dri/page-abogados.php",
 			"settings":
 			{
-				"buffer_size": 4613,
+				"buffer_size": 3354,
 				"line_ending": "Windows"
 			}
 		},
@@ -339,7 +339,7 @@
 			"file": "dri/style.css",
 			"settings":
 			{
-				"buffer_size": 38271,
+				"buffer_size": 39115,
 				"line_ending": "Unix"
 			}
 		},
@@ -347,15 +347,31 @@
 			"file": "dri/page-areaspractica.php",
 			"settings":
 			{
-				"buffer_size": 5351,
+				"buffer_size": 4249,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "dri/page.php",
+			"file": "dri/functions.php",
 			"settings":
 			{
-				"buffer_size": 1081,
+				"buffer_size": 6596,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/header.php",
+			"settings":
+			{
+				"buffer_size": 5392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/header-insider.php",
+			"settings":
+			{
+				"buffer_size": 3944,
 				"line_ending": "Unix"
 			}
 		}
@@ -384,13 +400,13 @@
 	},
 	"file_history":
 	[
+		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/index.php",
+		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/single-abogados.php",
+		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/page-abogados.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/single-areas.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/functions.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/page.php",
-		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/index.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/header.php",
-		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/single-abogados.php",
-		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/page-abogados.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/category-noticias.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/page-areaspractica.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/single.php",
@@ -530,6 +546,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"container",
 			"intro-content",
 			"http://www.copelec.cl/electrica/",
 			"Grupo Saesa",
@@ -656,8 +673,7 @@
 			"h1.tit",
 			"bg-complementario-dos",
 			"box",
-			"boxver",
-			".sabanaBoxboxvert"
+			"boxver"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -675,35 +691,33 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "dri/single-abogados.php",
+					"file": "dri/page.php",
 					"settings":
 					{
-						"buffer_size": 4301,
+						"buffer_size": 1166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3661,
-								3661
+								944,
+								944
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 634.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -713,15 +727,15 @@
 					"file": "dri/page-abogados.php",
 					"settings":
 					{
-						"buffer_size": 4613,
+						"buffer_size": 3354,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3694,
-								3694
+								303,
+								303
 							]
 						],
 						"settings":
@@ -749,15 +763,15 @@
 					"file": "dri/style.css",
 					"settings":
 					{
-						"buffer_size": 38271,
+						"buffer_size": 39115,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35939,
-								35939
+								15597,
+								15597
 							]
 						],
 						"settings":
@@ -769,7 +783,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11539.0,
+						"translation.y": 4109.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -779,15 +793,15 @@
 					"file": "dri/page-areaspractica.php",
 					"settings":
 					{
-						"buffer_size": 5351,
+						"buffer_size": 4249,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4423,
-								4423
+								3410,
+								3410
 							]
 						],
 						"settings":
@@ -799,34 +813,97 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1159.0,
+						"translation.y": 934.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "dri/page.php",
+					"file": "dri/functions.php",
 					"settings":
 					{
-						"buffer_size": 1081,
+						"buffer_size": 6596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								785,
-								785
+								403,
+								403
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "dri/header.php",
+					"settings":
+					{
+						"buffer_size": 5392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4681,
+								4681
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1539.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "dri/header-insider.php",
+					"settings":
+					{
+						"buffer_size": 3944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2849,
+								2849
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
