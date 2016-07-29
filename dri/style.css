@@ -114,7 +114,7 @@ img.grayscale {filter: blur(0px) brightness(1) contrast(1) grayscale(.8) hue-rot
 
 .navbar-default { background-color: transparent; border: none;}
 .navbar-brand { height: auto; padding: 15px 0;}
-.navbar-brand>img {display: block; max-width: 200px; height: auto; }
+.navbar-brand>img {display: block; max-width: 200px; height: auto;margin-left:15px; }
 
 .navbar-toggle{z-index: 9999; border: 1px solid #34495e; margin-right: 0;}
 .navbar-toggle .icon-bar{background:#34495e;}
@@ -126,7 +126,7 @@ img.grayscale {filter: blur(0px) brightness(1) contrast(1) grayscale(.8) hue-rot
 /*************************************************************************************/
 
 html, 
-body.home {height: 100%; background-color: #f2f2f2;}
+body.home {height: 100%; background-color: #ecf0f1;}
 body.home {color: #fff; text-align: center; /*background-image: url('images/bg_home_1.jpg');*/ background-size: cover; background-position: top center; background-attachment: fixed; background-repeat: no-repeat; }
 body.page, body.single{background-color:#ecf0f1;}
 
@@ -134,6 +134,8 @@ body.page, body.single{background-color:#ecf0f1;}
 .site-wrapper-inner {display: table-cell; vertical-align: top; }
 
 .cover-container {margin-right: auto; margin-left: auto; }
+
+video#v0 {position: fixed;top: 0; left: 0;width: 130%;display: block;}
 
 /* Padding for spacing */
 .inner {padding: 30px; }
@@ -174,7 +176,7 @@ body.page, body.single{background-color:#ecf0f1;}
 }
 
 /* Header New */
-#spanish img, #english img {max-width: 255px; width: 100%; height: auto; margin-bottom: 10px; -webkit-filter: grayscale(.5); filter: grayscale(.5);}
+#spanish img, #english img {max-width: 270px; width: 100%; height: auto; margin-bottom: 10px; -webkit-filter: grayscale(.5); filter: grayscale(.5);}
 
 /*************************************************************************************/
 /************************************* MAIN ******************************************/
@@ -187,7 +189,7 @@ body.page, body.single{background-color:#ecf0f1;}
 
 .totop{ background-position: 0 2000% !important; transition: fade .5s ease-in; background-size: 140% !important; opacity: 1 !important;}
 
-.inner {padding: 30px 0px; }
+.inner {padding: 30px 0px;z-index: 99; position: relative; }
 .inner p{color: #fff; font-size: 12px; }
 
 .big-box .inside , .half-box , .mini-box .inside , .mini-half-box {transition: all .25s ease-in;}
@@ -211,7 +213,7 @@ body.page, body.single{background-color:#ecf0f1;}
 .clr-bg03.col-box{background: rgba(44, 62, 80, .8);}
 
 .read-more-box { position: absolute; bottom: 10px; right: 10px; color: #fff; font-weight: 300; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out; cursor:pointer;}
-.read-more-box:hover{color: #ecf0f1; text-decoration: none;}
+.read-more-box:hover, .read-more-box:focus, .read-more-box:active{color: #ecf0f1; text-decoration: none;}
 
 .liner{border-top:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d;}
 .liner-top{border-top:1px solid #7d7d7d;}
@@ -235,38 +237,43 @@ body.page, body.single{background-color:#ecf0f1;}
 .bx-controls-direction {width: 100%; }
 .law .bx-controls-direction {width: 100%; }
 
-a.bx-prev{font-size: 120px; color: #fff; position: absolute; top: 150px; text-shadow: 0px 0px 2px rgb(0, 0, 0);}
-a.bx-next{font-size: 120px; color: #fff; position: absolute; top: 150px; right: 0; text-shadow: 0px 0px 2px rgb(0, 0, 0); }
+a.bx-prev{font-size: 120px; color: #fff; position: absolute; top: 120px; text-shadow: 0px 0px 2px rgb(0, 0, 0);}
+a.bx-next{font-size: 120px; color: #fff; position: absolute; top: 120px; right: 0; text-shadow: 0px 0px 2px rgb(0, 0, 0); }
 .area a.bx-prev{font-size: 120px; color: #fff; position: absolute; top: 105px;}
 .area a.bx-next{font-size: 120px; color: #fff; position: absolute; top: 105px; right: 0; }
 
-.law .bx-viewport {max-height: 420px; }
+.law .bx-viewport {max-height:375px; }
 .area .bx-viewport {max-height: 375px; }
 
 /* Estilos en común */
-.intro-content img{width: 100%; height: auto; max-width: 945px; margin: 25px 0 0;}
-.intro-content h2 {margin: 62px auto 10px; display: block; text-align: center; color: #fff; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 41px; font-weight: 400; line-height: .8em; }
-.intro-content h3 {color: #fff; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 18px; font-weight: 300; margin: 0 auto; display: block; text-align: center;}
+.intro-content img{width: 100%; height: auto; max-width: 945px; margin: 15px 0 0;}
+.intro-content h2 {margin: 120px auto 10px; display: block; text-align: center; color: #fff; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 41px; font-weight: 400; line-height: .8em; text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);}
+.intro-content h3 {color: #fff; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 18px; font-weight: 300; margin: 0 auto; display: block; text-align: center; text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);}
 .intro-content p {margin-top: 15px; margin-bottom: 15px; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; color: #526576; text-align: center; margin-left: auto; margin-right: auto;}
 
-h1.titular-page{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 30px; font-weight: 800; text-align: center; margin-bottom: 15px; margin-top: 10px; color: #006893; border-bottom: 1px solid #006893; padding-bottom: 10px;}
+.title-container{text-align: center;}
+h1.titular-page{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 22px; font-weight: 900; text-align: center; color: #526576; border-bottom: 1px solid #526576; display: inline-block; margin: 35px auto 10px;}
+h1.titular-page:after {content: ''; height: 8px; width: 8px; position: relative; background-color: #ecf0f1; top: 5px; bottom: 0; display: block; z-index: 9; transform: rotate(45deg); right: 0; left: 0; margin: 0 auto; border: 1px solid #526576;}
 
 .bajada h2{text-align:center; color:#2e6595; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 41px; font-weight: 400; line-height: .8em; margin-bottom: 5px; margin-top:40px;}
 .bajada h3{text-align:center; color:#2e6595; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 18px; font-weight: 300; margin-top:0; margin-bottom: 40px;}
 
-.hard-content{margin-top: 15px; margin-bottom: 20px; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; color: #526576; font-size: 14px; line-height: 1.8em;}
+.hard-content{margin-top: 0; margin-bottom: 20px; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; color: #526576; font-size: 14px; line-height: 1.8em;}
 .hard-content p{margin-top: 15px; margin-bottom:15px; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight:300; color:#526576;}
 .hard-content strong {font-weight: 700;}
 
-/* Page Abogados */
-.invite-area{margin-bottom: 40px; margin-top: 20px;}
+p.excerpt {font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; line-height: 1.6em; font-size: 15px; padding-left: 10px; color: #006893; border-left: 6px solid #006893; }
 
-.invite-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; line-height: 1.3em; font-size: 25px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin-top: 20px; margin-bottom: 15px; padding-bottom: 0;} 
+/* Page Abogados */
+.invite-area{margin-bottom: 40px; margin-top: 10px;}
+
+.invite-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; line-height: 1.3em; font-size: 16px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin-top: 20px; margin-bottom: 15px; padding-bottom: 0;} 
 
 .clr-bg06.invite-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; line-height: 1.3em; font-size: 25px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin-top: 20px; margin-bottom: 15px; padding-bottom: 0;}
 
-.contact-cta a{color: #fff; text-align: center; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 700; font-style: italic; font-size: 36px; vertical-align: middle; display: block; padding: 88px 0; cursor: pointer; webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.contact-cta a {color: #fff; text-align: right; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 700; font-style: italic; font-size: 18px; vertical-align: middle; display: block; padding: 60px 0 10px; cursor: pointer; webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
 .contact-cta a:hover{color:#cfe7ff; text-decoration: none;}
+
 /* Slider Page Abogados */
 .slides-navigation{display:none;}
 .lawslide.slider{max-height:500px;}
@@ -275,7 +282,7 @@ h1.titular-page{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; fon
 /* Fin Slider Page Abogados */
 .lawslide figure figcaption{opacity: 0; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; transition: all 0.5s ease; cursor: pointer; background-color: rgba(0,0,0,.7); width: 95%; display: block; margin: 0 auto; border-left: 7px solid #006893;}
 .lawslide figure:hover figcaption{opacity: 1;}
-.lawslide figcaption {position: relative; bottom: 190px; padding: 10px 15px; width: 100%; display: block; margin: 0 auto; min-height: 100px; z-index: 999;}
+.lawslide figcaption {position: relative; bottom: 250px; padding: 10px 15px; width: 100%; display: block; margin: 0 auto; min-height: 100px; z-index: 999;}
 .lawslide figure{min-height: 500px}
 .lawslide figure:hover img.grayscale {-webkit-filter: grayscale(1); filter: grayscale(1);}
 .lawslide h4 a{font-family: Poppins, helvetica, arial, sans-serif; font-weight:600; font-size: 15px;
@@ -285,13 +292,13 @@ h1.titular-page{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; fon
 .lawslide h3{font-family: Fira Sans, helvetica, arial, sans-serif; font-style: italic; font-size: 16px; font-weight: 300; color: #ffffff; border-top: 1px solid #ffffff; margin-top: 5px; padding-top: 10px; margin-bottom: 5px;}
 .lawslide a{font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; color:#ffffff;}
 
-.quote {min-height: 420px;}
-.quote p{ font-family: Fira Sans, helvetica, arial, sans-serif; color: #fff; font-weight: 300; font-size: 18px; line-height: 1.2em; padding-top: 30px; margin-bottom: 0; padding-left: 15px; }
+.quote {min-height: 375px;}
+.quote p{ font-family: Fira Sans, helvetica, arial, sans-serif; color: #fff; font-weight: 300; font-size: 18px; line-height: 1.2em; padding-top: 30px; margin-bottom: 0; padding-left: 15px; padding-right: 10px;}
 .quote p strong{font-weight:500;}
 .quote span {font-size: 16px; font-family: Fira Sans, helvetica, arial, sans-serif; font-style: italic; color: #fff; padding: 15px 15px; position: absolute; clear: both; bottom: 0; }
 
 /*Single Abogados */
-.intro-content p{font-family: Fira Sans, helvetica, arial, sans-serif; color:#526576; font-size: 16px; line-height: 1.6em; text-align: left; padding-bottom:10px; font-weight:300; margin-top: 40px;}
+.intro-content p{font-family: Fira Sans, helvetica, arial, sans-serif; color:#526576; font-size: 16px; line-height: 1.6em; text-align: left; padding-bottom:10px; font-weight:300; margin-top: 20px;}
 .intro-content p strong{font-weight: 700; }
 
 figure.lawyer {margin-bottom: 15px; margin-top: 20px;}
@@ -308,7 +315,8 @@ figcaption.data a{text-decoration: underline;}
 figcaption.info {min-height: 488px; }
 figcaption.info p{font-family: Fira Sans, helvetica, arial, sans-serif; font-size: 15px; line-height: 1.8em; color: #ffffff; padding: 5px 20px; margin-bottom: 0;}
 
-.quote-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 400; line-height: 1.8em; font-size: 14px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin-top: 20px; margin-bottom: 15px; padding-bottom: 0;}
+.quote-text {padding: 10px; }
+.quote-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 400; line-height: 1.8em; font-size: 14px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin: 10px;}
 
 .prefoot-image img {width: 100%; padding-left: 15px; }
 .prefoot-image.lawimg img{padding-left: 0;}
@@ -322,7 +330,9 @@ figcaption.info p{font-family: Fira Sans, helvetica, arial, sans-serif; font-siz
 .areaslide h4 a {font-family: Poppins, helvetica, arial, sans-serif; font-weight: 600; font-size: 12px; color: #ffffff; line-height: 1.4em; text-transform: uppercase; }
 
 .area figcaption h4 {padding-right: 15%;}
-.area.quote {min-height: 374px; }
+.area.quote {min-height: 375px; }
+
+h3.another{text-align: center; color: #2e6595; font-family: Alegreya Sans SC, helvetica, arial, sans-serif; font-size: 25px; font-weight: 400; line-height: .8em; margin-bottom: 15px; margin-top: 20px;}
 
 /* Page Noticias */
 figcaption.news-abstract {padding: 10px 10px 0; position: relative; bottom: 100px; margin: 0 auto; background: rgba(255,255,255,0); background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1))); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
@@ -341,7 +351,20 @@ span.current {border-radius: 50%; background: #f30; width: 50px; height: 50px; p
 .single-news h3 {font-size: 15px; line-height: 1.4em; padding-left: 10px; border-left: 5px solid #2e6595; color: #2e6595; margin-top: 20px; }
 .single-news p{font-size: 14px; }
 
+/* Single areas */
+#breadcrumbs ul {display: block; margin-bottom: 0; margin-top: 15px;}
+#breadcrumbs li {float: left; margin-right: 5px; list-style: none; }
+
+figure.related {max-height: 120px; margin-bottom: 10px; }
+figure.related img{width:100%;}
+
+.related figcaption {position: relative; top: -45px; background: rgba(0,0,0,.3); padding-top: 10px; padding-bottom: 7px; min-height: 45px; }
+.related h4{margin-left: 10px}
+.related a {color: #fff; }
+
 /* Page Contacto */
+.map-area{margin-top:20px;}
+
 .contact-area .form{padding: 30px 0 25px;}
 
 .form span {font-family: Fira Sans, helvetica, arial, sans-serif; color: #2e6595; font-size: 15px; margin-bottom: 5px; }
@@ -443,6 +466,8 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .container {width: 100%;}
+
   /* Bajada Page */
   .bajada h2{font-size: 30px; margin-top: 20px;}
   .bajada h3{margin-bottom: 20px;}
@@ -452,7 +477,11 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .contact-cta a{font-size: 30px; padding: 90px 0;}
 
   /* Page Áreas de Práctica */
-  .quote {min-height: 400px; }
+  .area .bx-viewport {max-height: 300px; }
+  .area a.bx-next {top: 75px;}
+  .area a.bx-prev {top: 75px;}
+
+  .quote {min-height: 300px; }
   .quote p {font-family: Fira Sans, helvetica, arial, sans-serif; color: #fff; font-weight: 300; font-size: 20px; }
 
   .areaslide figcaption {position: relative; bottom: 103px;} 
@@ -483,19 +512,26 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .mobile, .only-mobile{display:block;}
   .desktop, .only-desktop{display:none;}
   .tablet, .only-tablet{display:block;}
+  .none-tablet{display:none;}
 
   .navbar-header {float: none; margin: 0 auto; display: block; width: 100%; }
   a.navbar-brand {float: none; display: block; margin: 0 auto; }
   .navbar-brand>img {display: block; margin: 0 auto; }
 
-  .insider-nav ul#menu-navegacion {width: 70%; float: none !important; margin: 0 auto; display: block; }
+  .insider-nav ul#menu-navegacion {width: 85%; float: none !important; margin: 0 auto; display: block; }
+
+  #boxes .container {margin-top: -445px;}
+
+  .container.principal {margin-top: 135px; }
+
+  .area .bx-viewport {max-height: 320px; }
 
   /* Page Abogados */
   .bajada h2{font-size:30px;}
   .bajada h3{margin-bottom:15px;}
 
   .law .bx-viewport {max-height: 400px; }
-  .area.quote, .quote{min-height: auto;}
+  .area.quote, .quote {min-height: 160px; }
   .quote p{font-size: 18px; padding-top: 15px;}
   .quote span{margin-top: 0; }
 
@@ -506,13 +542,17 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .prefoot-image.lawimg img{padding-left: 0;}
 
   /* Page Áreas de Práctica */
-  .areaslide figcaption{bottom: 100px; min-height: 60px;}
-  .areaslide h4 a{font-size: 14px;}
+  .areaslide figcaption{bottom: 100px; min-height: 80px;}
+  .areaslide h4 a{font-size: 12px;}
 
   /* Single Áreas de Práctica */
   .invite-text p{font-size: 15px;}
 
   .contact-cta a{font-size: 25px; padding: 15px 0;}
+
+  .site-wrapper{background-image: url(http://dri.upmedia.cl/wp-content/uploads/2016/07/bg_home_1.jpg);
+    background-position: center; background-size: cover; background-repeat: no-repeat;}
+  video#v0{display:none;}
 
   /* Single Abogados */
   .lawyer-file h2{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; color: #296192; font-size: 36px; line-height: .95em; font-weight: 500;}
@@ -539,11 +579,14 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .mastfoot {position: relative; bottom: -210px; background: rgba(255,255,255,0); background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1))); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );}
 
   .inner {padding: 30px 0px 18px; }
+  .site-wrapper{background-image: url(http://dri.upmedia.cl/wp-content/uploads/2016/07/bg_home_1.jpg);
+    background-position: center;}
+  video#v0{display:none;}
 
   /* Home Nodes */
   #boxes .big-box {min-height: 105px;}
   #boxes .mini-box {min-height: 95px; }
-  #boxes .col-box{background:none;}
+  #boxes .col-box{background-size: cover; width: 100%;}
   #boxes .inside{right:15px; left:15px;}
   #boxes h2{padding-top: 20px;}
   #boxes h2 a {border: none; font-size: 17px;}
@@ -551,7 +594,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   #boxes br {display: none;}
   #boxes p {display: none;}
   #boxes .half-box {min-height: 110px; margin: 10px 0 0 15px; width: 43%;}
-  #boxes .area{background: #da531d !important;}
+  #boxes .area{background: rgba(138, 138, 138, 0.8)!important;}
   #boxes .noticias {background: #cb6941 !important; margin-left: 15px; margin-top: 10px; margin-right: 15px; min-height: 95px; }
   #boxes .contacto {background: #839db4 !important; margin-left: 15px; margin-top: 10px; margin-right: 15px; }
   #boxes .contacto .col-box{padding:0;}
@@ -568,7 +611,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   a.navbar-brand {float: left; display: block; margin-left: 10px; }
   .navbar-brand>img {max-width: 190px; }
 
-  .navbar-toggle{margin-top:15px; margin-right: 5px;}
+  .navbar-toggle{margin-top:30px; margin-right: 5px;}
 
   .container.principal {margin-top: 110px; }
 
@@ -587,6 +630,11 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 
   .bajada h2 {margin-top: 20px; margin-bottom: 5px; font-size: 27px; }
   .bajada h3 {font-size: 16px; margin-bottom:20px;}
+
+  /* Page Nuestra Firma */
+  .intro-content h2 {margin: 40px auto 5px; font-size: 30px; }
+  .intro-content h3 {font-size: 15px;}
+  .intro-content {min-height: 225px !important;}
 
   /* Page Abogados */
   .lawslide figure {/*max-height: 250px;*/ min-height: 0;}
@@ -642,6 +690,9 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .invite-text p{font-size: 19px; padding: 1px 0 1px 10px; margin-top: 5px; margin-bottom: 5px; }
 
   .contact-cta a{margin-bottom:10px; padding: 40px 0;}
+  
+  figure.related {max-height: 100px; margin-bottom: 10px; margin-right: 10px;}
+  .related figcaption { top: -93px; min-height: 95px; }
 
   /* Page Contacto */
   form.wpcf7-form {padding: 0 15px; }
@@ -663,6 +714,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   body.home {background-size: cover; }
   #boxes .half-box {min-height: 110px; margin: 10px 14px 0; width: 45%; }
   #boxes .container {margin-top: -240px;}
+  #boxes .col-box{background-size: cover; width: 100%;}
 
   #spanish img, #english img {max-width: 240px; margin: 0 auto;}
 
@@ -675,6 +727,10 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 
   .collapse.in{background: #e9eaea;}
 
+  .site-wrapper{background-image: url(http://dri.upmedia.cl/wp-content/uploads/2016/07/bg_home_1.jpg);
+    background-position: center;}
+  video#v0{display:none;}
+
   /* Preheading */
   .liner.bajada {width: 95%; display: block; margin: 0 auto; }
 
@@ -686,6 +742,10 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .g-recaptcha {transform: scale(0.86); -webkit-transform: scale(0.86); transform-origin: 0 0; -webkit-transform-origin: 0 0; }
 
   .form input[type="submit"].clr-bg01 {float: none; width: 100%; }
+
+  /* Single Áreas de Práctica */
+  .related figcaption {top: -172px; min-height: 170px; }
+  figure.related {max-height: 170px; margin-bottom: 20px; margin-right: 10px; }
 
 }
 

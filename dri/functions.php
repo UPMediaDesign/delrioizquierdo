@@ -3,11 +3,12 @@ add_theme_support('post-thumbnails');
 add_image_size('head', 1920, 800, true );
 add_image_size('headingpage', 969, 309, true );
 add_image_size('headingmid', 1280, 315, true );
+add_image_size('headingarea', 458, 245,true );
 add_image_size('footimage', 291, 283, true );
 add_image_size('staff', 385, 600, true );
 add_image_size('bigbox', 663, 375, true );
 add_image_size('mediumbox', 488, 232,true );
-//add_image_size('squared', 1080, 1080, true );
+add_image_size('related', 315, 100, true );
 }
 /* 
 add_filter('image_size_names_choose', 'my_image_sizes');

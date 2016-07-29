@@ -75,7 +75,7 @@ Template Name: Abogados
 
 
         <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 invite-area row" style="background:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>); background-color: #2c3e50; background-repeat: no-repeat; background-position: 35% 0px;">
-          <div class="col-md-8 col-sm-8 clr-bg03 quote-text row">
+          <div class="clr-bg03 quote-text row">
               <p><?php echo $post->post_content?></p>
           </div>
         </div>

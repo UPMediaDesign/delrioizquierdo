@@ -11,6 +11,17 @@
                 <h3><?php echo get_field('cargo_abogado', $post->ID);?></h3>
         </div>
 
+        <div class="col-md-8 col-md-offset-2">
+            <div id="breadcrumbs" class="hidden-xs">
+                <ul>
+                    
+                    <li><a href="<?php echo get_bloginfo('url')?>">Home</a></li>
+                    <li><a href="<?php echo get_bloginfo('url')?>/equipo/"><span class="fa fa-angle-right"></span> Equipo</a></li>
+                    <li><strong><span class="fa fa-angle-right"></span> <?php echo $post->post_title?></strong></li>
+                </ul>
+            </div>
+        </div>
+
         <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file mobile">
             <!-- Visible en Mobile -->
             <aside class="col-esp col-xs-12 mobile">
@@ -50,13 +61,14 @@
 
         </figure>
 
-        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo get_field('imagen_referencia', $post->ID);?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">
-            
-            <div class="col-md-8 col-sm-8 clr-bg03 quote-text">
+        <?php /*<div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo get_field('imagen_referencia', $post->ID);?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">*/ ?>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area">
+            <div class="clr-bg03 quote-text">
                 <p><?php echo get_field('parrafo_de_referencia', $post->ID);?></p>
             </div>
-            
         </div>
+
     </div>
 </main>
 

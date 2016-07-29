@@ -3,15 +3,30 @@
 <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
+                <div class="inner cover">
+          <h1 class="cover-heading"><img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white.png" width="300" alt=""></h1>
+          <p class="lead"></p>
+          <p class="lead">
+            <a href="#" class="btn btn-lg btn-link" onClick="langChooser('esp')">ESPAÑOL</a>
+            <a href="#" class="btn btn-lg btn-link" onClick="langChooser('eng')">ENGLISH</a>
+          </p>
+        </div>
 
+        <video id="v0" autoplay loop>
+            <source src="<?php echo get_bloginfo('template_directory')?>/video/ex.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+            <source>
+        </video>
+
+        <?php /*
         <div class="inner cover">
           <h1 class="cover-heading"><img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white.png" width="300" alt=""></h1>
           <p class="lead"></p>
           <p class="lead">
-            <a href="#" class="btn btn-lg btn-link" onClick="langChooser('esp')">ESP</a>
-            <a href="#" class="btn btn-lg btn-link" onClick="langChooser('eng')">ENG</a>
+            <a href="#" class="btn btn-lg btn-link" onClick="langChooser('esp')">ESPAÑOL</a>
+            <a href="#" class="btn btn-lg btn-link" onClick="langChooser('eng')">ENGLISH</a>
           </p>
         </div>
+        */ ?>
 
         <div class="mastfoot">
           <div class="inner">
@@ -125,18 +140,21 @@
     </div>  
 </div>   
 
-<?php
-    $bgimg = get_field('home_background', 'options');
-    $bs = array();
-    foreach($bgimg as $b):
-        array_push($bs , $b['imagen']);
-    endforeach;
-    $selectedBg = array_rand($bs , 1); 
-?>
+<!-- Imagenes Rotatorias -->
+<?php /*
+    <?php
+        $bgimg = get_field('home_background', 'options');
+        $bs = array();
+        foreach($bgimg as $b):
+            array_push($bs , $b['imagen']);
+        endforeach;
+        $selectedBg = array_rand($bs , 1); 
+    ?>
 
-<style type="text/css">
-body.home{background-image: url('<?php echo $bs[$selectedBg];?>'); background-repeat:  no-repeat; background-size: cover; background-position: top center; background-attachment: fixed; }
-</style>
+    <style type="text/css">
+    body.home{background-image: url('<?php echo $bs[$selectedBg];?>'); background-repeat:  no-repeat; background-size: cover; background-position: top center; background-attachment: fixed; }
+    </style>
+*/ ?>
 
 <script>
 function langChooser(lang){
@@ -152,5 +170,6 @@ function langChooser(lang){
   	});
 }
 </script>
+
 
 <?php get_footer()?>

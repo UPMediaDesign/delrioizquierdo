@@ -17,7 +17,7 @@ Template Name: Áreas de Práctica
 
     </div>
 
-    <div class="col-md-10 col-md-offset-1 hard-content">
+    <div class="col-md-8 col-md-offset-2 hard-content">
       <p><?php echo $post->post_excerpt; ?></p>
     </div>
 
@@ -54,7 +54,7 @@ Template Name: Áreas de Práctica
         </div>
 
         <!-- Slider Áreas de Práctica Phones -->
-        <div class="col-md-9 col-xs-12 col-esp only-mobile">
+        <div class="col-md-9 col-xs-12 col-esp only-mobile none-tablet">
           <ul class="areaslide resp-clear">
               <?php $areaslide = 0;?>
               <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1))?>
@@ -87,7 +87,7 @@ Template Name: Áreas de Práctica
     <div class="row">
 
       <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 invite-area row" style="background:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>); background-color: #2c3e50; background-repeat: no-repeat;">
-        <div class="col-md-8 col-sm-8 clr-bg03 quote-text row">
+        <div class="clr-bg03 quote-text row">
           <p><?php echo $post->post_content?></p>
         </div>
       </div>
