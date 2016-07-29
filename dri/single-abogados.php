@@ -38,9 +38,11 @@
             </aside>
         </figure>
 
+<?php /*
         <div class="col-md-8 col-md-offset-2 intro-content">
             <p><?php echo $post->post_excerpt;?></p>
         </div>
+*/ ?>
 
         <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file">
             <!-- Visible en Desktop -->
@@ -53,7 +55,12 @@
                 </figcaption>
             </aside>
 
-            <figcaption class="col-md-7 col-esp clr-bg06 info">
+            <figcaption class="col-md-7 col-esp info">
+                <div class="invite-area">
+                    <div class="quote-text">
+                        <?php echo get_field('parrafo_de_referencia', $post->ID);?>
+                    </div>
+                </div>
                 <p><?php echo $post->post_content ?></p>        
                 <p><?php echo get_field('membresia_abogado', $post->ID);?></p>
                 <p><strong>Idiomas:</strong> <?php echo get_field('manejo_idiomatico', $post->ID);?></p>
@@ -63,11 +70,6 @@
 
         <?php /*<div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo get_field('imagen_referencia', $post->ID);?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">*/ ?>
 
-        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area">
-            <div class="clr-bg03 quote-text">
-                <p><?php echo get_field('parrafo_de_referencia', $post->ID);?></p>
-            </div>
-        </div>
 
     </div>
 </main>

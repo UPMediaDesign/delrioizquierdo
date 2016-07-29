@@ -25,10 +25,12 @@
 		<div class="col-md-5 col-md-offset-1 intro-content">
 
 			<img style="margin-bottom:20px;" src="<?php echo $bg[0]?>" alt="<?php echo $post->post_title; ?>">
+<?php /*
             <div class="col-md-12 col-sm-12 clr-bg05 contact-cta">
                 <a href="<?php echo get_page_link(15)?>" title="Contáctenos" rel="nofollow">Contáctenos</a>
             </div>
 
+*/ ?>
 		</div>
 
 		<div class="col-md-5 hard-content">

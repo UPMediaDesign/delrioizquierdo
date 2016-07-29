@@ -3,7 +3,7 @@ add_theme_support('post-thumbnails');
 add_image_size('head', 1920, 800, true );
 add_image_size('headingpage', 969, 309, true );
 add_image_size('headingmid', 1280, 315, true );
-add_image_size('headingarea', 458, 245,true );
+add_image_size('headingarea', 458, 355,true );
 add_image_size('footimage', 291, 283, true );
 add_image_size('staff', 385, 600, true );
 add_image_size('bigbox', 663, 375, true );

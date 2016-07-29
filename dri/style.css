@@ -265,7 +265,8 @@ h1.titular-page:after {content: ''; height: 8px; width: 8px; position: relative;
 p.excerpt {font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; line-height: 1.6em; font-size: 15px; padding-left: 10px; color: #006893; border-left: 6px solid #006893; }
 
 /* Page Abogados */
-.invite-area{margin-bottom: 40px; margin-top: 10px;}
+
+.invite-area {margin-top: 10px; margin-bottom: 20px; }
 
 .invite-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 300; line-height: 1.3em; font-size: 16px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin-top: 20px; margin-bottom: 15px; padding-bottom: 0;} 
 
@@ -313,10 +314,16 @@ figcaption.data a{font-family: Fira Sans, helvetica, arial, sans-serif; font-siz
 figcaption.data a{text-decoration: underline;}
 
 figcaption.info {min-height: 488px; }
-figcaption.info p{font-family: Fira Sans, helvetica, arial, sans-serif; font-size: 15px; line-height: 1.8em; color: #ffffff; padding: 5px 20px; margin-bottom: 0;}
+figcaption.info p{font-family: Fira Sans, helvetica, arial, sans-serif; font-size: 15px; line-height: 1.8em; color: #2c3e50; padding: 0 20px; margin-bottom: 0;}
 
-.quote-text {padding: 10px; }
-.quote-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 400; line-height: 1.8em; font-size: 14px; border-left: 5px solid #f5f5f5; padding-left: 15px; margin: 10px;}
+.quote-text {padding: 0 10px 0; }
+.info .invite-area{margin-top:10px;}
+.invite-area .quote-text {padding: 0 10px 10px; }
+.invite-area .quote-text p{border-left: 5px solid #fff;}
+
+.quote-text p{color: #ffffff; font-family: Fira Sans, helvetica, arial, sans-serif; font-weight: 400; line-height: 1.8em; font-size: 14px; border-left: 5px solid #006893; padding-left: 15px; margin: 10px;}
+
+.info .quote-text p{font-weight: 400; line-height: 1.8em !important; font-size: 15px !important; border-left: 5px solid #006893; padding-left: 15px !important; margin: 0 10px;  color: #006893 !important;}
 
 .prefoot-image img {width: 100%; padding-left: 15px; }
 .prefoot-image.lawimg img{padding-left: 0;}
@@ -359,7 +366,7 @@ figure.related {max-height: 120px; margin-bottom: 10px; }
 figure.related img{width:100%;}
 
 .related figcaption {position: relative; top: -45px; background: rgba(0,0,0,.3); padding-top: 10px; padding-bottom: 7px; min-height: 45px; }
-.related h4{margin-left: 10px}
+.related h4{margin-left: 10px; min-height:45px;}
 .related a {color: #fff; }
 
 /* Page Contacto */

@@ -339,7 +339,7 @@
 			"file": "dri/single-areas.php",
 			"settings":
 			{
-				"buffer_size": 2490,
+				"buffer_size": 2505,
 				"line_ending": "Unix"
 			}
 		},
@@ -347,7 +347,7 @@
 			"file": "dri/single-abogados.php",
 			"settings":
 			{
-				"buffer_size": 3590,
+				"buffer_size": 3585,
 				"line_ending": "Unix"
 			}
 		},
@@ -363,7 +363,7 @@
 			"file": "dri/style.css",
 			"settings":
 			{
-				"buffer_size": 41945,
+				"buffer_size": 42319,
 				"line_ending": "Unix"
 			}
 		},
@@ -699,7 +699,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -744,8 +744,8 @@
 						"selection":
 						[
 							[
-								1365,
-								1365
+								721,
+								721
 							]
 						],
 						"settings":
@@ -767,15 +767,15 @@
 					"file": "dri/single-areas.php",
 					"settings":
 					{
-						"buffer_size": 2490,
+						"buffer_size": 2505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								550,
-								550
+								901,
+								901
 							]
 						],
 						"settings":
@@ -797,15 +797,15 @@
 					"file": "dri/single-abogados.php",
 					"settings":
 					{
-						"buffer_size": 3590,
+						"buffer_size": 3585,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1925,
-								1925
+								2847,
+								2847
 							]
 						],
 						"settings":
@@ -817,7 +817,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 361.0,
+						"translation.y": 311.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -855,7 +855,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -863,15 +863,15 @@
 					"file": "dri/style.css",
 					"settings":
 					{
-						"buffer_size": 41945,
+						"buffer_size": 42319,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40699,
-								40699
+								21999,
+								21999
 							]
 						],
 						"settings":
@@ -883,7 +883,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 12724.0,
+						"translation.y": 5591.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -929,8 +929,8 @@
 						"selection":
 						[
 							[
-								484,
-								484
+								714,
+								714
 							]
 						],
 						"settings":
