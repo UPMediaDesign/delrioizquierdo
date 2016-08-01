@@ -62,11 +62,19 @@
                     </div>
                 </div>
                 <p><?php echo $post->post_content ?></p>        
-                <p><?php echo get_field('membresia_abogado', $post->ID);?></p>
-                <p><strong>Idiomas:</strong> <?php echo get_field('manejo_idiomatico', $post->ID);?></p>
             </figcaption>
 
         </figure>
+
+        <div class="col-md-4 col-md-offset-2 lawyer-file">
+            <p><strong>Alma Mater:</strong> <?php echo get_field('casa_estudios', $post->ID);?></p>
+            <p><strong>Idiomas:</strong> <?php echo get_field('manejo_idiomatico', $post->ID);?></p>
+        </div>
+
+        <div class="col-md-4 lawyer-file">
+            <p><strong>Área de Práctica:</strong> <?php echo get_field('abogado_area', $post->ID);?></p>
+            <p><strong>Miembro de:</strong> <?php echo get_field('membresia_abogado', $post->ID);?></p>
+        </div>
 
         <?php /*<div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo get_field('imagen_referencia', $post->ID);?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">*/ ?>
 

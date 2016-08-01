@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>?ver=3.8.1" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,700,700i|Alegreya+Sans+SC:300,400,500|Poppins:700,600,300|Alegreya+Sans:300,300i,400,700,700i' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
 
 <!--Otros -->
 <?php call_scripts()?>

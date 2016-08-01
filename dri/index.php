@@ -77,7 +77,7 @@
 
         	<div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover;">
             	<div class="col-md-7 clr-bg03 col-box">
-                	<h2><a href="<?php echo get_page_link(11)?>"><strong>Abogados</strong></a></h2>
+                	<h2><a href="<?php echo get_page_link(11)?>"><strong>Equipo</strong></a></h2>
                     <div class="pull-right">
                         <a href="<?php echo get_page_link(11)?>" class="read-more-box">Ver más <span class="fa fa-arrow-right fa-fw"></span></a>
                     </div>
