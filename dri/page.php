@@ -27,7 +27,7 @@
  		</div>
 */ ?>
 
-		<div class="col-md-10 col-md-offset-1 intro-content" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: 980px; min-height: 320px; background-repeat: no-repeat; margin-top: 20px; background-position: center;">
+		<div class="col-md-12 intro-content" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: cover; min-height: 320px; background-repeat: no-repeat; margin-top: 20px; background-position: center;">
 		    <h2><?php echo get_field('titular_bajada', $post->ID);?></h2>
 		    <h3><?php echo get_field('apoyo_bajada', $post->ID);?></h3>
 		</div>

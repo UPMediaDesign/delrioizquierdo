@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-family"
+			],
+			[
 				"margin",
 				"margin-left"
 			],
@@ -26,10 +30,6 @@
 			[
 				"single",
 				"single-news"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"area",
@@ -323,7 +323,7 @@
 			"file": "dri/single-abogados.php",
 			"settings":
 			{
-				"buffer_size": 3945,
+				"buffer_size": 3912,
 				"line_ending": "Unix"
 			}
 		},
@@ -331,7 +331,7 @@
 			"file": "dri/style.css",
 			"settings":
 			{
-				"buffer_size": 42319,
+				"buffer_size": 42524,
 				"line_ending": "Unix"
 			}
 		}
@@ -360,8 +360,9 @@
 	},
 	"file_history":
 	[
-		"/Users/FrontUpmedia/Github/dri/dri/functions.php",
 		"/Users/FrontUpmedia/Github/dri/dri/page.php",
+		"/Users/FrontUpmedia/Github/dri/dri/index.php",
+		"/Users/FrontUpmedia/Github/dri/dri/functions.php",
 		"/Users/FrontUpmedia/Github/dri/dri/page-areaspractica.php",
 		"/Users/FrontUpmedia/Github/dri/dri/single-areas.php",
 		"/Users/FrontUpmedia/Github/dri/dri/single-abogados.php",
@@ -369,7 +370,6 @@
 		"/Users/FrontUpmedia/Github/dri/dri/header.php",
 		"/Users/FrontUpmedia/Github/dri/dri/header-insider.php",
 		"/Users/FrontUpmedia/Github/dri/front/style.css",
-		"/Users/FrontUpmedia/Github/dri/dri/index.php",
 		"/Users/FrontUpmedia/Github/dri/dri/style.css",
 		"/Users/FrontUpmedia/Github/dri/dri/category-noticias.php",
 		"/Users/FrontUpmedia/Github/delrioizquierdo/dri/index.php",
@@ -495,7 +495,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"Open files",
@@ -665,15 +665,15 @@
 					"file": "dri/single-abogados.php",
 					"settings":
 					{
-						"buffer_size": 3945,
+						"buffer_size": 3912,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3525,
-								3525
+								1169,
+								1169
 							]
 						],
 						"settings":
@@ -685,7 +685,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 609.0,
+						"translation.y": 376.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -701,15 +701,15 @@
 					"file": "dri/style.css",
 					"settings":
 					{
-						"buffer_size": 42319,
+						"buffer_size": 42524,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31470,
-								31470
+								7359,
+								7359
 							]
 						],
 						"settings":
@@ -721,7 +721,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8974.0,
+						"translation.y": 1759.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -757,7 +757,7 @@
 		"cols":
 		[
 			0.0,
-			0.482060206135,
+			0.5,
 			1.0
 		],
 		"rows":

@@ -28,7 +28,7 @@ html[xmlns] .clearfix { display: block }
 b, strong { font-weight: 700 }
 em, i { font-style: italic }
 small { font-size: 10px }
-p { font-family: helvetica, arial, sans-serif; color: #323232 }
+/*p { font-family: helvetica, arial, sans-serif; color: #323232 }*/
 
 .separator { padding: 15px 0 }
 .miniseparator { padding-bottom: 10px }
@@ -114,7 +114,7 @@ img.grayscale {filter: blur(0px) brightness(1) contrast(1) grayscale(.8) hue-rot
 
 .navbar-default { background-color: transparent; border: none;}
 .navbar-brand { height: auto; padding: 15px 0;}
-.navbar-brand>img {display: block; max-width: 200px; height: auto;margin-left:15px; }
+.navbar-brand>img {display: block; max-width: 230px; height: auto;margin-left:15px; }
 
 .navbar-toggle{z-index: 9999; border: 1px solid #34495e; margin-right: 0;}
 .navbar-toggle .icon-bar{background:#34495e;}
@@ -304,6 +304,8 @@ p.excerpt {font-family: Open Sans, helvetica, arial, sans-serif; font-weight: 30
 
 figure.lawyer {margin-bottom: 15px; margin-top: 20px;}
 
+.lawyer-file{border-top: 1px solid #ccc; padding-top: 10px; clear: both; margin-top: 10px;}
+.lawyer-file p{font-family: Open Sans, helvetica, arial, sans-serif; line-height: 1.4em;}
 .lawyer-file aside {max-height: 490px; }
 .lawyer-file img{width:100%; height:auto; max-width:313px;}
 
@@ -365,10 +367,9 @@ span.current {border-radius: 50%; background: #f30; width: 50px; height: 50px; p
 figure.related {max-height: 120px; margin-bottom: 10px; }
 figure.related img{width:100%;}
 
-.related figcaption {position: relative; top: -45px; background: rgba(0,0,0,.3); padding-top: 10px; padding-bottom: 7px; min-height: 45px; }
-.related h4{margin-left: 10px; min-height:45px;}
+.related figcaption {position: relative; top: -60px; background: rgba(0,0,0,.3); padding-top: 10px; padding-bottom: 7px; min-height: 45px; }
+.related h4{margin-left: 10px; min-height: 32px; font-size: 15px;} 
 .related a {color: #fff; }
-
 /* Page Contacto */
 .map-area{margin-top:20px;}
 
@@ -455,6 +456,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 
   /* Single Abogados */
   figcaption.info {min-height: auto; }
+
 
   .lawyer-file h2{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; color: #296192; font-size: 32px; line-height: .95em; font-weight: 500;}
   .lawyer-file h3{font-family: Alegreya Sans SC, helvetica, arial, sans-serif; color:#296192;font-weight: 300; font-size: 14px; }
