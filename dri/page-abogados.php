@@ -49,8 +49,8 @@ Template Name: Abogados
                   <h4>
                     <a href="<?php echo get_permalink($lawyer->ID)?>" rel="nofollow"><?php echo $lawyer->post_title?></a>
                   </h4>
-                  <?php $lawyers = get_field('datos_abogado', $lawyer->ID); ?>
-                  <?php foreach ($lawyers as $dato): ?>
+                  <?php $lawyersinfo = get_field('datos_abogado', $lawyer->ID); ?>
+                  <?php foreach ($lawyersinfo as $dato): ?>
                   <h3><?php echo $dato['cargo_abogado']?></h3>
                   <?php endforeach;?>
                 </figcaption>
@@ -67,6 +67,29 @@ Template Name: Abogados
           <span><?php echo get_field('autor_del_parrafo', $post->ID);?></span>
 
         </div>
+    </div>
+    <div class="row">
+    	<div class="container">
+        
+        
+            <div class="clear separator"></div>
+            <div class="col-md-8 col-md-offset-2 col-esp">
+				<?php foreach($lawyers as $individuals):?>
+                    
+                    <div class="col-md-4 col-xs-6 lawyerlist col-esp">
+                        <a href="<?php echo get_permalink($individuals->ID)?>">
+                            <span class="fa fa-caret-right"></span>
+                            <?php echo $individuals->post_title?>
+                        </a>
+                        
+                    </div>
+                    
+                <?php endforeach;?>
+            </div>
+            <div class="clear separator"></div>
+        </div>
+    	
+        
     </div>
 </section>
 
@@ -88,8 +111,8 @@ Template Name: Abogados
     jQuery('.slider').bxSlider({
       slideWidth: 600,
       slideMargin:0,
-      minSlides: 3,
-      maxSlides: 3,
+      minSlides: 4,
+      maxSlides: 4,
       prevText:'<span class="fa fa-angle-left"></span>',
       nextText:'<span class="fa fa-angle-right"></span>',
       hideControlOnEnd:true,

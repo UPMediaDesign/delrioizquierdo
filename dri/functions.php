@@ -3,11 +3,11 @@ add_theme_support('post-thumbnails');
 add_image_size('head', 1920, 800, true );
 add_image_size('headingpage', 969, 309, true );
 add_image_size('headingmid', 1280, 315, true );
-add_image_size('headingarea', 458, 355,true );
+add_image_size('headingarea', 1280, 320,true );
 add_image_size('footimage', 291, 283, true );
 add_image_size('staff', 385, 600, true );
-add_image_size('bigbox', 663, 375, true );
-add_image_size('mediumbox', 488, 232,true );
+add_image_size('bigbox', 928, 560, true );
+add_image_size('mediumbox', 667, 278,true );
 add_image_size('related', 315, 100, true );
 }
 /* 
@@ -32,7 +32,6 @@ if(is_single()){
 function register_my_menu() {
 	register_nav_menu( 'primary', 'Menú principal');
 	register_nav_menu( 'secondary', 'Menú footer');
-//	register_nav_menu( 'third', 'Menú interiores');
 }
 add_action( 'init', 'register_my_menu' );
 ?>

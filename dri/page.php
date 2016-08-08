@@ -1,4 +1,4 @@
-<?php get_header('insider');?>
+<?php get_header('page');?>
 
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'headingmid' ); ?>
@@ -17,7 +17,7 @@
 	</div>
 </main>
 
-<div class="container">
+<div class="nocontainer">
 	<div class="row">
 
 <?php /*
@@ -27,7 +27,7 @@
  		</div>
 */ ?>
 
-		<div class="col-md-12 intro-content" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: cover; min-height: 320px; background-repeat: no-repeat; margin-top: 20px; background-position: center;">
+		<div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: 100%; min-height: 320px; background-repeat: no-repeat; background-position: center;">
 		    <h2><?php echo get_field('titular_bajada', $post->ID);?></h2>
 		    <h3><?php echo get_field('apoyo_bajada', $post->ID);?></h3>
 		</div>

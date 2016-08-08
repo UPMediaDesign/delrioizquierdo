@@ -4,7 +4,7 @@
     <div class="site-wrapper-inner">
       <div class="cover-container">
                 <div class="inner cover">
-          <h1 class="cover-heading"><img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white.png" width="300" alt=""></h1>
+          <h1 class="cover-heading"><img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white_shadow.png" width="300" alt=""></h1>
           <p class="lead"></p>
           <p class="lead">
             <a href="#" class="btn btn-lg btn-link" onClick="langChooser('esp')">ESPAÑOL</a>
@@ -13,7 +13,8 @@
         </div>
 
         <video id="v0" autoplay loop>
-            <source src="<?php echo get_bloginfo('template_directory')?>/video/ex.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+            <!-- <?php var_dump(get_field('home_video_mp4' , 'options'))?> -->
+            <source src="<?php echo get_field('home_video_mp4' , 'options')?>" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
             <source>
         </video>
 
@@ -48,7 +49,7 @@
 <?php $midtbg = wp_get_attachment_image_src( $midtbgid, 'mediumbox');?>
 
 <div id="boxes">
-    <div id="spanish" class="container">
+    <div id="spanish" class="ultracontainer">
     	<div class="row">
             
             <img src="<?php echo get_bloginfo('template_directory')?>/images/logo_blue.png" alt="" class="img-responsive">
@@ -75,7 +76,7 @@
                 </div>
             </div>
 
-        	<div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover;">
+        	<div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover; background-position: 30%;">
             	<div class="col-md-7 clr-bg03 col-box">
                 	<h2><a href="<?php echo get_page_link(11)?>"><strong><?php echo get_the_title(11)?></strong></a></h2>
                     <div class="pull-right">
@@ -93,7 +94,7 @@
         </div>
     </div>
     
-    <div id="english" class="container">
+    <div id="english" class="ultracontainer">
     	<div class="row">
         	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo_blue.png" alt="" class="img-responsive">
 
@@ -122,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover;">
+            <div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover; background-position: 30%;">
                 <div class="col-md-7 clr-bg03 col-box">
                     <h2><a href="<?php echo get_page_link(11)?>"><strong>Abogados</strong></a></h2>
                     <div class="pull-right">

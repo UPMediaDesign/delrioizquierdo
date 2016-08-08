@@ -323,7 +323,23 @@
 			"file": "dri/single-abogados.php",
 			"settings":
 			{
-				"buffer_size": 3912,
+				"buffer_size": 4745,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/index.php",
+			"settings":
+			{
+				"buffer_size": 8217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/single-areas.php",
+			"settings":
+			{
+				"buffer_size": 4019,
 				"line_ending": "Unix"
 			}
 		},
@@ -331,7 +347,15 @@
 			"file": "dri/style.css",
 			"settings":
 			{
-				"buffer_size": 42524,
+				"buffer_size": 45640,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/functions.php",
+			"settings":
+			{
+				"buffer_size": 6640,
 				"line_ending": "Unix"
 			}
 		}
@@ -511,6 +535,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".container-flow",
 			"Fira",
 			".quote p",
 			"container",
@@ -637,8 +662,7 @@
 			"social",
 			">\n",
 			"boxShareMin",
-			"h1.tit",
-			"bg-complementario-dos"
+			"h1.tit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -657,7 +681,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -665,15 +689,15 @@
 					"file": "dri/single-abogados.php",
 					"settings":
 					{
-						"buffer_size": 3912,
+						"buffer_size": 4745,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1169,
-								1169
+								1060,
+								1060
 							]
 						],
 						"settings":
@@ -685,7 +709,67 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 376.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dri/index.php",
+					"settings":
+					{
+						"buffer_size": 8217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6645,
+								6645
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1737.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dri/single-areas.php",
+					"settings":
+					{
+						"buffer_size": 4019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -697,19 +781,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "dri/style.css",
 					"settings":
 					{
-						"buffer_size": 42524,
+						"buffer_size": 45640,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7359,
-								7359
+								12165,
+								12165
 							]
 						],
 						"settings":
@@ -721,7 +805,37 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1759.0,
+						"translation.y": 3836.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "dri/functions.php",
+					"settings":
+					{
+						"buffer_size": 6640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								451,
+								451
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

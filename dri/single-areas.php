@@ -6,12 +6,12 @@
 <main class="container principal">
 	<div class="row">
         
-		<div class="col-md-10 col-md-offset-1 liner-bottom bajada">
+		<div class="col-md-10 col-md-offset-1 liner-top bajada">
             <h2><?php echo $post->post_title;?></h2>
             <h3><?php echo get_field('texto_apoyo', $post->ID)?></h3>
 		</div>
 
-        <div class="col-md-10 col-md-offset-1">
+        <?php /* <div class="col-md-10 col-md-offset-1">
             <div id="breadcrumbs" class="hidden-xs">
                 <ul>
                     
@@ -20,53 +20,117 @@
                     <li><strong><span class="fa fa-angle-right"></span> <?php echo $post->post_title?></strong></li>
                 </ul>
             </div>
-        </div>
+        </div> ?>
+
 
 		<div class="col-md-5 col-md-offset-1 intro-content">
 
 			<img style="margin-bottom:20px;" src="<?php echo $bg[0]?>" alt="<?php echo $post->post_title; ?>">
-<?php /*
+
             <div class="col-md-12 col-sm-12 clr-bg05 contact-cta">
                 <a href="<?php echo get_page_link(15)?>" title="Contáctenos" rel="nofollow">Contáctenos</a>
             </div>
 
-*/ ?>
+
 		</div>
 
 		<div class="col-md-5 hard-content">
             <p class="excerpt"><?php echo $post->post_excerpt; ?></p>
         	<?php echo $post->post_content?>
         </div>
-
+		<?php */?>
 	</div>
 </main>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo $bg[0]?>);background-size: cover; min-height: 320px; background-repeat: no-repeat; margin-top: 20px; background-position: center;">
+		</div>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+		<div class="clear separator"></div>
+		<div class="col-md-8 col-md-offset-2 hard-content">
+        	<?php echo $post->post_content?>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row">
+        	<div class="clr-bg03 invite-text">
+        		<p><?php echo $post->post_excerpt; ?></p>
+        	</div>
+        	
+        </div>
+
+	</div>
+</div>
 
 <section class="container">
   <div class="row">
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-8 col-md-offset-2">
 
         <h3 class="another">Otras Áreas</h3>
-
+		<ul class="slider">
         <?php $areaslide = 0;?>
-        <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => 3, 'orderby' => 'rand',))?>
+        <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1, 'orderby' => 'rand',))?>
         <?php foreach($areas as $area):?>
         <?php $areaslide++?>
-
-        <figure class="col-md-4 col-sm-6 col-xs-12 col-esp related">
-            <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>">
-                <?php echo get_the_post_thumbnail($area->ID , 'related' , array('class' => 'img-responsive'))?>
-            </a>
-            <figcaption >
-                <h4><a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>"><?php echo $area->post_title?></a></h4>
-            </figcaption>
-        </figure>
-
+		
+            <li>
+                <figure class="col-xs-12 col-esp related">
+                    <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>">
+                        <?php echo get_the_post_thumbnail($area->ID , 'related' , array('class' => 'img-responsive'))?>
+                    </a>
+                    <figcaption >
+                        <h4><a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>"><?php echo $area->post_title?></a></h4>
+                    </figcaption>
+                </figure>
+            </li>
         <?php endforeach;?>
-
+		</ul>
     </div>
 
   </div>
 </section>
+
+<script>
+    // Este es script del slider, no lo borre 
+    jQuery('.slider').bxSlider({
+      slideWidth: 250,
+      slideMargin:0,
+      minSlides: 1,
+      maxSlides: 3,
+      prevText:'<span class="fa fa-angle-left"></span>',
+      nextText:'<span class="fa fa-angle-right"></span>',
+      hideControlOnEnd:true,
+	  moveSlides:1,
+      pager:false,
+      responsive:true,
+      adaptiveHeight: true,
+    });  
+</script>
+
+<style>
+a.bx-prev {
+    font-size: 70px;
+    top: 50px;
+    left: -20px;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+a.bx-next {
+    font-size: 70px;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    right: -20px;
+}
+</style>
 
 <?php get_footer('insider')?>
