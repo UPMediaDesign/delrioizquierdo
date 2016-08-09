@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"single",
+				"single-abogados"
+			],
+			[
 				"font",
 				"font-family"
 			],
@@ -26,10 +30,6 @@
 			[
 				"col",
 				"col-box"
-			],
-			[
-				"single",
-				"single-news"
 			],
 			[
 				"area",
@@ -323,7 +323,7 @@
 			"file": "dri/single-abogados.php",
 			"settings":
 			{
-				"buffer_size": 4745,
+				"buffer_size": 4721,
 				"line_ending": "Unix"
 			}
 		},
@@ -331,7 +331,7 @@
 			"file": "dri/index.php",
 			"settings":
 			{
-				"buffer_size": 8217,
+				"buffer_size": 8224,
 				"line_ending": "Unix"
 			}
 		},
@@ -339,7 +339,31 @@
 			"file": "dri/single-areas.php",
 			"settings":
 			{
-				"buffer_size": 4019,
+				"buffer_size": 4073,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/page.php",
+			"settings":
+			{
+				"buffer_size": 1417,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/header-insider.php",
+			"settings":
+			{
+				"buffer_size": 4046,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dri/header-page.php",
+			"settings":
+			{
+				"buffer_size": 4033,
 				"line_ending": "Unix"
 			}
 		},
@@ -347,7 +371,7 @@
 			"file": "dri/style.css",
 			"settings":
 			{
-				"buffer_size": 45640,
+				"buffer_size": 46973,
 				"line_ending": "Unix"
 			}
 		},
@@ -681,7 +705,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -689,15 +713,45 @@
 					"file": "dri/single-abogados.php",
 					"settings":
 					{
-						"buffer_size": 4745,
+						"buffer_size": 4721,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1060,
-								1060
+								2715,
+								2715
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 490.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dri/index.php",
+					"settings":
+					{
+						"buffer_size": 8224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1134,
+								1134
 							]
 						],
 						"settings":
@@ -715,19 +769,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "dri/index.php",
+					"buffer": 2,
+					"file": "dri/single-areas.php",
 					"settings":
 					{
-						"buffer_size": 8217,
+						"buffer_size": 4073,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6645,
-								6645
+								2429,
+								2429
 							]
 						],
 						"settings":
@@ -739,17 +793,139 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1737.0,
+						"translation.y": 925.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "dri/single-areas.php",
+					"buffer": 3,
+					"file": "dri/page.php",
 					"settings":
 					{
-						"buffer_size": 4019,
+						"buffer_size": 1417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "dri/header-insider.php",
+					"settings":
+					{
+						"buffer_size": 4046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4046
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 939.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "dri/header-page.php",
+					"settings":
+					{
+						"buffer_size": 4033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2950,
+								2950
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 939.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "dri/style.css",
+					"settings":
+					{
+						"buffer_size": 46973,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44314,
+								44314
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13701.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "dri/functions.php",
+					"settings":
+					{
+						"buffer_size": 6640,
 						"regions":
 						{
 						},
@@ -770,72 +946,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "dri/style.css",
-					"settings":
-					{
-						"buffer_size": 45640,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12165,
-								12165
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3836.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "dri/functions.php",
-					"settings":
-					{
-						"buffer_size": 6640,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								451,
-								451
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

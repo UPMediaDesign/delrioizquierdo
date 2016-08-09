@@ -32,6 +32,7 @@ if(is_single()){
 function register_my_menu() {
 	register_nav_menu( 'primary', 'Menú principal');
 	register_nav_menu( 'secondary', 'Menú footer');
+//	register_nav_menu( 'third', 'Menú interiores');
 }
 add_action( 'init', 'register_my_menu' );
 ?>

@@ -172,7 +172,7 @@ body.home {height: 100%; background-color: #fff;}
 body.home {color: #fff; text-align: center; /*background-image: url('images/bg_home_1.jpg');*/ background-size: cover; background-position: top center; background-attachment: fixed; background-repeat: no-repeat; }
 body.page, body.single{background-color:#fff;}
 
-.site-wrapper {display: table; width: 100%; height: 100%; /* For at least Firefox */ min-height: 100%; -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5); box-shadow: inset 0 0 100px rgba(0,0,0,.5); }
+.site-wrapper {display: table; width: 100%; height: 100%; /* For at least Firefox */ min-height: 100%; -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.8); box-shadow: inset 0 0 100px rgba(0,0,0,.8); }
 .site-wrapper-inner {display: table-cell; vertical-align: top; }
 
 .cover-container {margin-right: auto; margin-left: auto; }
@@ -669,7 +669,9 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   /* Home Portada */
   body.home {background-size: cover;}
 
-  .mastfoot {position: relative; bottom: -210px; background: rgba(255,255,255,0); background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1))); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );}
+  .mastfoot {position: absolute; bottom: 0; background: rgba(255,255,255,0); background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1))); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );}
+
+  .lead {width: 80%; margin: 0 auto; }
 
   .inner {padding: 30px 0px 18px; }
   .site-wrapper{background-image: url(http://dri.upmedia.cl/wp-content/uploads/2016/07/bg_home_1.jpg);
@@ -680,13 +682,13 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   #boxes .big-box {min-height: 105px;}
   #boxes .mini-box {min-height: 95px; }
   #boxes .col-box{background-size: cover; width: 100%;}
-  #boxes .inside{right:15px; left:15px;}
-  #boxes h2{padding-top: 20px;}
+  #boxes .inside{right:15px; left:15px; background-image: none !important;}
+  #boxes h2 {padding-top: 15px; margin-top: 15px; }
   #boxes h2 a {border: none; font-size: 17px;}
   #boxes h2 a strong{border: none;}
   #boxes br {display: none;}
   #boxes p {display: none;}
-  #boxes .half-box {min-height: 110px; margin: 10px 0 0 15px; width: 43%;}
+  #boxes .half-box {min-height: 110px; margin: 10px 0 0 15px; width: 43%; background-image: none !important;}
   #boxes .area{background: rgba(138, 138, 138, 0.8)!important;}
   #boxes .noticias {background: #cb6941 !important; margin-left: 15px; margin-top: 10px; margin-right: 15px; min-height: 95px; }
   #boxes .contacto {background: #839db4 !important; margin-left: 15px; margin-top: 10px; margin-right: 15px; }
@@ -694,9 +696,11 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 
   #boxes .container {margin-top: -240px;}
 
+  #boxes .ultracontainer {width: 100%; position: absolute; left: 0; margin-top: -260px;}
+
   #spanish img, #english img {max-width: 240px; margin: 0 auto 20px;}
 
-  .cover-heading img {max-width: 240px; height: auto; width: 100%; }
+  .cover-heading img {max-width: 295px; height: auto; width: 100%; }
 
   .read-more-box{display:none; }
 
@@ -721,13 +725,13 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   /* Preheading */
   .liner.bajada {width: 92%; display: block; margin: 0 auto; }
 
-  .bajada h2 {margin-top: 20px; margin-bottom: 5px; font-size: 27px; }
+  .bajada h2 {margin-top: 20px; margin-bottom: 5px; font-size: 27px; line-height: 1.1em;}
   .bajada h3 {font-size: 16px; margin-bottom:20px;}
 
   /* Page Nuestra Firma */
-  .intro-content h2 {margin: 40px auto 5px; font-size: 30px; }
+  .intro-content h2 {margin: 0px auto 5px; font-size: 25px; padding-top: 20px; }
   .intro-content h3 {font-size: 15px;}
-  .intro-content {min-height: 225px !important;}
+  .intro-content {min-height: 100px !important; clear: both; padding-top: 0px;}
 
   /* Page Abogados */
   .lawslide figure {/*max-height: 250px;*/ min-height: 0;}
@@ -740,27 +744,32 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .lawslide.slider {max-height: 500px;}
   .lawslide li {width: 3.583% !important; }
 
-  a.bx-next, a.bx-prev {font-size: 85px; top: 370px;}
+  a.bx-next {font-size: 85px; top: 370px; right:0 !important;}
+  a.bx-prev {font-size: 85px; top: 370px; left:0 !important;}
 
   .law .bx-controls-direction {top: 320px;}
   .law .bx-viewport {max-height: 272px;}
+
+  .lawyerlist {font-size: 15px; line-height: 1.3em; padding-bottom: 10px; }
       
   /* Single Abogados */
-  .lawyer-file figcaption.info {min-height: auto; clear: both; }
+  .lawyer-file figcaption.info {min-height: auto; clear: both; padding-bottom: 10px;}
   .lawyer-file img {width: 50%; }
 
   .lawyer-file h2{font-family: Glober, helvetica, arial, sans-serif; color: #296192; font-size: 32px; line-height: .95em; font-weight: 500;}
   .lawyer-file h3{font-family: Glober, helvetica, arial, sans-serif; color:#296192;font-weight: 300; font-size: 14px; }
   .lawyer-file a{font-family: Alegreya Sans, helvetica, arial, sans-serif; font-size: 13px; color: #c34614; font-weight:300; font-style: italic;}
 
-  .intro-content {clear: both; padding-top: 20px; }
   .intro-content p {margin-top: 0; clear: both; padding-top: 10px; border-top: 1px solid #526576; }
   
+  .quote-text p{padding-bottom: 0 !important;}
+
   /* Page Áreas de Práctica */
   .intro-content img {margin-top: 0; }
 
   .hard-content {font-size:14px; line-height:1.5em; margin-top: 15px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px; padding-left: 15px;
+    padding-right: 15px;}
 
   .quote p {padding: 15px 15px; font-size: 20px;}
   .quote span {font-size: 14px; margin-top: 10px; padding-top: 0; padding-bottom: 10px;}
@@ -770,24 +779,28 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .areaslide img {display: none; }
   .areaslide figcaption {position: static; width: auto; text-transform: uppercase; border-left:0px; border-top: 1px solid #006893}
 
-  .invite-area {margin-bottom:10px; margin:20px 0 0 0; padding: 0 15px; background-size: 0 !important; background-color: transparent !important;}
-  .invite-area .quote-text{margin:0 0 15px; padding-top: 1px; padding-bottom: 1px;}
+  .invite-area {margin: 20px 0 0 0; padding: 0 5px; background-size: 0 !important; background-color: transparent !important;} 
+  .invite-area .quote-text{margin: 0px; padding: 10px 5px 0 !important;}
   .prefoot-image img {padding:0; display: none;}
 
   .area .bx-viewport {/*max-height: 280px;*/ height: 100% !important; }
   ul.areaslide {width: 100% !important; }
   .areaslide li {width: 100% !important; }
 
+  .single-areas li {width: 100% !important; max-width: 338px !important; }
+
   .area .bx-controls-direction {display:none;}
+  .bx-controls-direction {width: 45%; }
 
   /* Single Áreas de Prática */
   .invite-text{padding-top:5px; padding-bottom:5px; margin-bottom: 10px; }
-  .invite-text p{font-size: 19px; padding: 1px 0 1px 10px; margin-top: 5px; margin-bottom: 5px; }
+  .invite-text p{font-size: 19px; padding: 1px 0 1px 7px; margin-top: 5px; margin-bottom: 5px; margin-left: 10px; } 
 
   .contact-cta a{margin-bottom:10px; padding: 40px 0;}
   
   figure.related {max-height: 100px; margin-bottom: 10px; margin-right: 10px;}
   .related figcaption { top: -93px; min-height: 95px; }
+  .related h4{margin-top: 40px; margin-bottom: 0;}
 
   /* Page Contacto */
   form.wpcf7-form {padding: 0 15px; }
@@ -808,10 +821,11 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   /* Home */
   body.home {background-size: cover; }
   #boxes .half-box {min-height: 110px; margin: 10px 14px 0; width: 45%; }
+  #boxes .ultracontainer{width: 100%; position: absolute; left: 0; margin-top: -160px;}
   #boxes .container {margin-top: -240px;}
   #boxes .col-box{background-size: cover; width: 100%;}
 
-  #spanish img, #english img {max-width: 240px; margin: 0 auto;}
+  #spanish img, #english img {max-width: 200px; margin: 0 auto; }
 
   .cover-heading img {max-width: 240px; height: auto; width: 100%; }
 
