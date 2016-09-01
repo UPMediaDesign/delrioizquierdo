@@ -53,7 +53,7 @@ Template Name: Áreas de Práctica
               
               <li class="col-md-3 col-sm-6 col-xs-12 col-esp">
                 <figure>
-                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>"  style="background-image:url(<?php echo get_field('imagen_vista_principal', $area->ID)?>)">
+                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>" style="background-image:url(<?php echo get_field('imagen_vista_principal', $area->ID)?>)">
                     <img class="" src="<?php echo get_field('imagen_vista_principal', $area->ID)?>" alt="<?php echo $area->post_title?>" style="visibility:hidden">
                   </a>
                   <figcaption >
@@ -75,9 +75,9 @@ Template Name: Áreas de Práctica
               <?php $areaslide++?>
               <li class="col-md-3 col-sm-6 col-xs-12 col-esp">
                 <figure>
-                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>">
+                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>" >
                     <img class="grayscale" src="<?php echo get_field('imagen_vista_principal', $area->ID)?>" alt="<?php echo $area->post_title?>"></a>
-                  <figcaption >
+                  <figcaption style="background-image:url(<?php echo get_field('imagen_vista_principal', $area->ID)?>)">
                     <h4><a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>"><?php echo $area->post_title?></a></h4>
                   </figcaption>
                 </figure>

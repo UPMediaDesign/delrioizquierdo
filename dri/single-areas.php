@@ -6,7 +6,7 @@
 <main class="container principal">
 	<div class="row">
         
-		<div class="col-md-10 col-md-offset-1 liner-top bajada">
+		<div class="col-md-10 col-md-offset-1 bajada">
             <h2><?php echo $post->post_title;?></h2>
             <h3><?php echo get_field('texto_apoyo', $post->ID)?></h3>
 		</div>

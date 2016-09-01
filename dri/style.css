@@ -355,6 +355,7 @@ p.excerpt {font-family: Glober, helvetica, arial, sans-serif; font-weight: 300; 
 figure.lawyer {margin-bottom: 15px; margin-top: 20px;}
 
 .lawyer-file{border-top: 1px solid #ccc; padding-top: 10px; clear: both; margin-top: 10px;}
+.lawyer-file a { font-weight:400}
 .lawyer-file p{font-family: Glober, helvetica, arial, sans-serif;}
 .lawyer-file aside {max-height: 490px; }
 .lawyer-file img{width:100%; height:auto; max-width:313px;}
@@ -674,8 +675,10 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .lead {width: 80%; margin: 0 auto; }
 
   .inner {padding: 30px 0px 18px; }
-  .site-wrapper{background-image: url(http://dri.upmedia.cl/wp-content/uploads/2016/07/bg_home_1.jpg);
-    background-position: center;}
+  .inner p {padding: 0 5px; }
+
+  .site-wrapper{background-image: url(http://dri.upmedia.cl/wp-content/uploads/2016/07/bg_home_1.jpg); background-position: center;} 
+
   video#v0{display:none;}
 
   /* Home Nodes */
@@ -696,7 +699,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 
   #boxes .container {margin-top: -240px;}
 
-  #boxes .ultracontainer {width: 100%; position: absolute; left: 0; margin-top: -260px;}
+  #boxes .ultracontainer {width: 100%; position: absolute; left: 0; margin-top: -220px;}
 
   #spanish img, #english img {max-width: 240px; margin: 0 auto 20px;}
 
@@ -731,7 +734,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   /* Page Nuestra Firma */
   .intro-content h2 {margin: 0px auto 5px; font-size: 25px; padding-top: 20px; }
   .intro-content h3 {font-size: 15px;}
-  .intro-content {min-height: 100px !important; clear: both; padding-top: 0px;}
+  .intro-content {min-height: 100px !important; clear: both; padding-top: 0px; margin-top: 0 !important;}
 
   /* Page Abogados */
   .lawslide figure {/*max-height: 250px;*/ min-height: 0;}
@@ -753,12 +756,13 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .lawyerlist {font-size: 15px; line-height: 1.3em; padding-bottom: 10px; }
       
   /* Single Abogados */
+  .lawyer-file {border: none; margin-top:0 !important;}
   .lawyer-file figcaption.info {min-height: auto; clear: both; padding-bottom: 10px;}
   .lawyer-file img {width: 50%; }
 
   .lawyer-file h2{font-family: Glober, helvetica, arial, sans-serif; color: #296192; font-size: 32px; line-height: .95em; font-weight: 500;}
   .lawyer-file h3{font-family: Glober, helvetica, arial, sans-serif; color:#296192;font-weight: 300; font-size: 14px; }
-  .lawyer-file a{font-family: Alegreya Sans, helvetica, arial, sans-serif; font-size: 13px; color: #c34614; font-weight:300; font-style: italic;}
+  .lawyer-file a{font-family: Alegreya Sans, helvetica, arial, sans-serif; font-size: 13px; color: #4576a0; font-weight:300; font-style: italic;}
 
   .intro-content p {margin-top: 0; clear: both; padding-top: 10px; border-top: 1px solid #526576; }
   
@@ -767,9 +771,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   /* Page Áreas de Práctica */
   .intro-content img {margin-top: 0; }
 
-  .hard-content {font-size:14px; line-height:1.5em; margin-top: 15px;
-    margin-bottom: 20px; padding-left: 15px;
-    padding-right: 15px;}
+  .hard-content {font-size:14px; line-height:1.5em; margin-top: 0; margin-bottom: 20px; padding-left: 15px; padding-right: 15px;}
 
   .quote p {padding: 15px 15px; font-size: 20px;}
   .quote span {font-size: 14px; margin-top: 10px; padding-top: 0; padding-bottom: 10px;}
@@ -777,7 +779,7 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
   .area.quote {min-height: 300px; height: 100%; }
 
   .areaslide img {display: none; }
-  .areaslide figcaption {position: static; width: auto; text-transform: uppercase; border-left:0px; border-top: 1px solid #006893}
+  .areaslide figcaption {position: static; width: auto; text-transform: uppercase; border-left:0px; border-top: 1px solid #006893; background-position: 0px -50px; min-height: 120px;}
 
   .invite-area {margin: 20px 0 0 0; padding: 0 5px; background-size: 0 !important; background-color: transparent !important;} 
   .invite-area .quote-text{margin: 0px; padding: 10px 5px 0 !important;}
@@ -840,6 +842,8 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
     background-position: center;}
   video#v0{display:none;}
 
+  .areaslide figcaption{background-position: 0px -140px; min-height: 120px; background-size: 100%;}
+
   /* Preheading */
   .liner.bajada {width: 95%; display: block; margin: 0 auto; }
 
@@ -859,6 +863,3 @@ span.wpcf7-not-valid-tip {font-size: 12px !important; font-weight: 700 !importan
 }
 
 /* Aquí es donde termina el style y empieza su curiosidad */
-
-
-.lawyer-file a { font-weight:400}
