@@ -724,7 +724,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -739,8 +739,8 @@
 						"selection":
 						[
 							[
-								1531,
-								1531
+								208,
+								1802
 							]
 						],
 						"settings":
@@ -752,7 +752,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 30.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -812,7 +812,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 164.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -918,8 +918,8 @@
 						"selection":
 						[
 							[
-								1169,
-								1190
+								3919,
+								3919
 							]
 						],
 						"settings":
@@ -931,7 +931,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1029.0,
+						"translation.y": 721.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
