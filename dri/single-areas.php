@@ -77,7 +77,7 @@
         <h3 class="another">Otras Áreas</h3>
 		<ul class="slider single-areas">
         <?php $areaslide = 0;?>
-        <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1, 'orderby' => 'rand',))?>
+        <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1, 'orderby' => 'rand' ,  'suppress_filters' => 0))?>
         <?php foreach($areas as $area):?>
         <?php $areaslide++?>
 		

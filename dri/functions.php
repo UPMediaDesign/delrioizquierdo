@@ -32,7 +32,7 @@ if(is_single()){
 function register_my_menu() {
 	register_nav_menu( 'primary', 'Menú principal');
 	register_nav_menu( 'secondary', 'Menú footer');
-//	register_nav_menu( 'third', 'Menú interiores');
+	register_nav_menu( 'lang', 'Menú idiomas');
 }
 add_action( 'init', 'register_my_menu' );
 ?>
@@ -63,14 +63,14 @@ function abogados_register() {
 		'menu_position' => 5, 
         '_builtin' => false,
         'capability_type' => 'post',
-		'has_archive' => __('abogados-archive', 'textdomain'),
+		'has_archive' => 'false',
         'publicly_queryable' => true,
         'exclude_from_search' => false,
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
         'hierarchical' => false,
-        'rewrite' => array('slug' => _x( 'abogados', 'lawyers', 'textdomain' )),
+        'rewrite' => array('slug' => _x( 'equipo', 'lawyers', 'textdomain' )),
         'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' , 'custom-fields')
     );
     register_post_type('abogados', $args);

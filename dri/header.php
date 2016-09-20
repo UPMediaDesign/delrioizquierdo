@@ -126,12 +126,12 @@ function FbookShare(){
 <div id="fb-root"></div>
 
 <div id="loader-wrapper">
-   <i class="fa fa-circle-o-notch fa-spin"></i>
+	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white.png" width="100" alt="">
 </div>
 
 <?php if(!is_home()){?>
 <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="megacontainer">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>

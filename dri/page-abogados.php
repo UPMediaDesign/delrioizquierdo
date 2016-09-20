@@ -17,7 +17,7 @@ Template Name: Abogados
 
 		</div>
 
-    <div class="col-md-8 col-md-offset-2 hard-content col-esp">
+    <div class="col-md-10 col-md-offset-1 hard-content col-esp">
       <p><?php echo $post->post_excerpt; ?></p>
     </div>
 
@@ -37,7 +37,7 @@ Template Name: Abogados
         <div class="col-md-9 col-xs 12 col-esp">
           <ul class="lawslide slider resp-clear">
             <?php $lawslide = 0;?>
-            <?php $lawyers = get_posts(array('post_type' => 'abogados', 'numberposts' => -1))?>
+            <?php $lawyers = get_posts(array('post_type' => 'abogados', 'numberposts' => -1,  'suppress_filters' => 0))?>
             <?php foreach($lawyers as $lawyer):?>
             <?php $lawslide++?>
             <li class="col-md-4 col-sm-6 col-xs-6 col-esp">
@@ -76,12 +76,13 @@ Template Name: Abogados
             <div class="col-md-8 col-md-offset-2 col-esp">
 				<?php foreach($lawyers as $individuals):?>
                     
-                    <div class="col-md-4 col-xs-6 lawyerlist col-esp">
+                    <div class="col-md-4 col-xs-6 lawyerlist">
                         <a href="<?php echo get_permalink($individuals->ID)?>">
-                            <span class="fa fa-caret-right"></span>
+                            
                             <?php echo $individuals->post_title?>
+                            <span class="fa fa-angle-right pull-right"></span>
                         </a>
-                        
+                        <div class="clear miniseparator border"></div>
                     </div>
                     
                 <?php endforeach;?>

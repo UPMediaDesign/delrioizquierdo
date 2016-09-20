@@ -3,6 +3,12 @@
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'headingmid' ); ?>
 
+<?php 
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); ?>
+		
+
 <main class="container principal">
 	<div class="row">
 
@@ -40,11 +46,16 @@
 		<div class="title-container">
 			<h1 class="titular-page"><?php echo $post->post_title?></h1>
 		</div>
-		<div class="col-md-8 col-md-offset-2 hard-content">
-        	<?php echo $post->post_content?>
+		<div class="col-md-10 col-md-offset-1 hard-content">
+        	<?php echo apply_filters('the_content' , $post->post_content)?>
         </div>
 
 	</div>
 </div>
+
+<?php 	} // end while
+} // end if
+?>
+
 
 <?php get_footer('insider')?>

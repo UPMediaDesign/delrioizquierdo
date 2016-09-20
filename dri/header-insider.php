@@ -79,12 +79,12 @@ jQuery(window).load(function() {
 
 <div id="fb-root"></div>
 
-<div id="loader-wrapper">
-   <i class="fa fa-circle-o-notch fa-spin"></i>
+<div id="loader-wrapper" class="white">
+   <?php /* <i class="fa fa-circle-o-notch fa-spin"></i> */?>
 </div>
 
 <nav class="navbar navbar-fixed-top insider-nav" role="navigation">
-    <div class="container">
+    <div class="megacontainer">
         <div class="row">
 
           <div class="navbar col-md-10 col-md-offset-1 col-xs-12 liner-bottom">
@@ -103,7 +103,9 @@ jQuery(window).load(function() {
               </div>
 
               <div class="navbar-collapse collapse">
-                  <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'nav navbar-nav navbar-right' , 'theme_location' => 'primary' ) ); ?>
+                  <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'nav navbar-nav' , 'theme_location' => 'lang' ) ); ?>
+                  
+                  <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'nav navbar-nav' , 'theme_location' => 'primary' ) ); ?>
               </div><!--/.nav-collapse -->
 
           </div>    

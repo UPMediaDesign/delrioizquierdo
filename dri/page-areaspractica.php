@@ -17,7 +17,7 @@ Template Name: Áreas de Práctica
 
     </div>
 
-    <div class="col-md-8 col-md-offset-2 hard-content">
+    <div class="col-md-10 col-md-offset-1 hard-content">
       <p><?php echo $post->post_excerpt; ?></p>
     </div>
 
@@ -36,8 +36,14 @@ Template Name: Áreas de Práctica
         <!-- Slider Áreas de Práctica -->
         <div class="col-md-9 col-xs-12 col-esp">
           <ul class="areaslide slider resp-clear only-desktop only-tablet">
-              <?php $areaslide = 0;?>
-              <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1))?>
+              <?php 
+			  wp_reset_query(); 
+			  $areaslide = 0;
+			  
+			  
+			  ?>
+              <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1  ,  'suppress_filters' => 0 ))?>
+              
               <?php foreach($areas as $area):?>
               <?php $areaslide++?>
               
@@ -53,8 +59,12 @@ Template Name: Áreas de Práctica
               
               <li class="col-md-3 col-sm-6 col-xs-12 col-esp">
                 <figure>
-                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>" style="background-image:url(<?php echo get_field('imagen_vista_principal', $area->ID)?>)">
-                    <img class="" src="<?php echo get_field('imagen_vista_principal', $area->ID)?>" alt="<?php echo $area->post_title?>" style="visibility:hidden">
+                 
+                 <?php $imgAreaid = get_field('imagen_vista_principal', $area->ID)?>
+				 <?php $imgArea = wp_get_attachment_image_src( $imgAreaid, 'staff' ); ?>
+                 
+                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>" style="background-image:url(<?php echo $imgArea[0]?>)">
+                    <img class="" src="<?php echo $imgArea[0]?>" alt="<?php echo $area->post_title?>" style="visibility:hidden">
                   </a>
                   <figcaption >
                     <h4><a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>"><?php echo $area->post_title?></a></h4>
@@ -70,14 +80,21 @@ Template Name: Áreas de Práctica
         <div class="col-md-9 col-xs-12 col-esp only-mobile none-tablet">
           <ul class="areaslide resp-clear">
               <?php $areaslide = 0;?>
-              <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1))?>
+              
+              <?php //$areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1 , 'suppress_filters' => true ))?>
               <?php foreach($areas as $area):?>
-              <?php $areaslide++?>
+              <?php $areaslide++ ?>
+			
+				<?php $imgAreaid = get_field('imagen_vista_principal', $area->ID)?>
+				<?php $imgArea = wp_get_attachment_image_src( $imgAreaid, 'related' ); ?>
+	
               <li class="col-md-3 col-sm-6 col-xs-12 col-esp">
                 <figure>
-                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>" >
-                    <img class="grayscale" src="<?php echo get_field('imagen_vista_principal', $area->ID)?>" alt="<?php echo $area->post_title?>"></a>
-                  <figcaption style="background-image:url(<?php echo get_field('imagen_vista_principal', $area->ID)?>)">
+                  <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>">
+		
+		
+                    <img class="grayscale" src="<?php echo $imgArea[0]?>" alt="<?php echo $area->post_title?>"></a>
+                  	<figcaption style="background-image:url(<?php echo $imgArea[0]?>)">
                     <h4><a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>"><?php echo $area->post_title?></a></h4>
                   </figcaption>
                 </figure>
@@ -96,10 +113,10 @@ Template Name: Áreas de Práctica
     </div>
 </section>
 
-<section class="container">
+<section class="container" id="texto_footer">
     <div class="row">
 
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 invite-area row" style="background:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>); background-color: #2c3e50; background-repeat: no-repeat;">
+      <div class="col-md-12 col-sm-12 invite-area row" style="background:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>); background-color: #2c3e50; background-repeat: no-repeat;">
         <div class="clr-bg03 quote-text row">
           <p><?php echo $post->post_content?></p>
         </div>

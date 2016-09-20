@@ -44,7 +44,7 @@
         </div>
 */ ?>
 
-        <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file">
+        <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file col-esp clr-bg03">
             <!-- Visible en Desktop -->
             <aside class="col-md-5 col-esp desktop">
                 <img src="<?php echo get_field('foto_perfil', $post->ID);?>" alt="<?php echo $post->post_title; ?>">
@@ -55,42 +55,53 @@
                 </figcaption>
             </aside>
 
-            <figcaption class="col-md-7 col-esp info clr-bg03">
+            <figcaption class="col-md-7 col-esp info">
                 <div class="invite-area">
                     <div class="quote-text">
-                        <?php echo get_field('parrafo_de_referencia', $post->ID);?>
+                        <p><?php echo get_field('parrafo_de_referencia', $post->ID);?></p>
                     </div>
                 </div>
-                <p><?php echo $post->post_content ?></p>        
+                <p><?php echo $post->post_content ?></p> 
+                
+                <div class="clear"></div>
+                           
+                <div class="lawyer-file" style="margin:20px 20px 0 20px; padding-top: 20px">
+                	<div class="row">
+                		
+                		<?php if(get_field('casa_estudios', $post->ID)){?>
+						<div class="col-md-12 col-esp"><p><strong>Estudios:</strong> <?php echo get_field('casa_estudios', $post->ID);?></p></div>
+					<?php }
+
+					if( get_field('manejo_idiomatico', $post->ID)){?>
+						<div class="col-md-12 col-esp"><p><strong>Idiomas:</strong> <?php echo get_field('manejo_idiomatico', $post->ID);?></p></div><?php 
+					}
+					if( get_field('abogado_area', $post->ID)){?>
+						<div class="col-md-12 col-esp"><p><strong>Área de Práctica:</strong> <?php echo get_field('abogado_area', $post->ID);?></p></div>
+					<?php }
+
+					if(get_field('contacto_secretaria_email', $post->ID)){?>
+						
+						<div class="col-md-12 col-esp"><p><strong>Contacto:</strong><a href="tel:<?php echo get_field('contacto_secretaria_fono', $post->ID);?>"><?php echo get_field('contacto_secretaria_fono', $post->ID);?></a> – <a href="mailto:<?php echo get_field('contacto_secretaria_email', $post->ID);?>"  style="color:#fff" ><?php echo get_field('contacto_secretaria_email', $post->ID);?></a></p></div>
+					<?php }?>
+                		
+                	</div>
+					
+				</div>
+                            
             </figcaption>
 
-            <div class="lawyer-file">
-            	<?php if(get_field('casa_estudios', $post->ID)){?>
-            		<div class="col-md-6"><p><strong>Estudios:</strong> <br/><?php echo get_field('casa_estudios', $post->ID);?></p></div>
-                <?php }
-				
-				if( get_field('manejo_idiomatico', $post->ID)){?>
-            		<div class="col-md-6"><p><strong>Idiomas:</strong> <br/><?php echo get_field('manejo_idiomatico', $post->ID);?></p></div><?php 
-				}
-				if( get_field('abogado_area', $post->ID)){?>
-            		<div class="col-md-6"><p><strong>Área de Práctica:</strong> <br/><?php echo get_field('abogado_area', $post->ID);?></p></div>
-                <?php }
-				
-				if(get_field('contacto_secretaria_fono', $post->ID)){?>
-            		<div class="clear separator border"></div>
-                    <div class="col-md-12"><p><strong>Contacto:</strong> <br/><a href="tel:<?php echo get_field('contacto_secretaria_fono', $post->ID);?>"><?php echo get_field('contacto_secretaria_fono', $post->ID);?></a> – <a href="mailto:<?php echo get_field('contacto_secretaria_email', $post->ID);?>"><?php echo get_field('contacto_secretaria_email', $post->ID);?></a></p></div>
-                <?php }?>
-            
-                
-                
-                
-                
-            </div>
+            <div class="clear"></div>
 
         </figure>
-
-        <?php /*<div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row" style="background:url(<?php echo get_field('imagen_referencia', $post->ID);?>); background-size: 260px; background-color: #2c3e50; background-repeat: no-repeat; background-position: 100% 0px;">*/ ?>
-
+		
+       
+       <?php if(get_field('frase_destacada_socio')){?>
+        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row featured-quote" style="background-color: #2c3e50">
+        	
+        		<?php echo get_field('frase_destacada_socio')?>	
+        
+        </div>
+		<?php }?>
 
     </div>
 </main>

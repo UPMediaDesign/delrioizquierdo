@@ -1,23 +1,29 @@
 <?php get_header()?>
 
+
+
 <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
                 <div class="inner cover">
           <h1 class="cover-heading"><img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white_shadow.png" width="300" alt=""></h1>
-          <p class="lead"></p>
+         <!-- <p class="lead"></p>-->
           <p class="lead">
             <a href="#" class="btn btn-lg btn-link" onClick="langChooser('esp')">ESPAÑOL</a>
             <a href="#" class="btn btn-lg btn-link" onClick="langChooser('eng')">ENGLISH</a>
           </p>
         </div>
-
-        <video id="v0" autoplay loop>
+		
+       <?php if(get_field('desactivar_colores_de_video' , 'options') == 1){?>
+        <video id="v0" autoplay loop class="gray">
+       <?php }else{?>
+       	<video id="v0" autoplay loop>
+       <?php }?>
             <!-- <?php var_dump(get_field('home_video_mp4' , 'options'))?> -->
             <source src="<?php echo get_field('home_video_mp4' , 'options')?>" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
             <source>
         </video>
-
+		
         <?php /*
         <div class="inner cover">
           <h1 class="cover-heading"><img src="<?php echo get_bloginfo('template_directory')?>/images/logo_white.png" width="300" alt=""></h1>
@@ -31,7 +37,7 @@
 
         <div class="mastfoot">
           <div class="inner">
-            <p><strong>Rosario Norte 615, Oficina 2004.</strong> Las Condes, Santiago, Chile · <strong>Tel (+56-2)2591 8800</strong> · Fax (+56-2)2591 8801 · CP: 7561211</p>
+            <p style="text-shadow: 0 0 5px #000"><strong>Rosario Norte 615, Oficina 2004.</strong> Las Condes, Santiago, Chile · <strong>Tel (+56-2)2591 8800</strong> · Fax (+56-2)2591 8801 · CP: 7561211</p>
           </div>
         </div>
 
@@ -58,7 +64,7 @@
             	<div class="inside" style="background-image:url(<?php echo $bigbg[0]?>); background-repeat: no-repeat; background-size: cover;">
                     <div class="col-md-5 clr-bgop01 col-box">
                         <h2><a href="<?php echo get_page_link(4)?>" rel="nofollow" title="Ir a Nuestra Firma">Nuestra <br><strong>Firma</strong></a></h2>
-                        <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
+                        <p>Equipo multidiciplianario, proactivo y eficiente en la entrega de soluciones</p>
                     </div>
                     <div class="pull-right">
                         <a href="<?php echo get_page_link(4)?>" rel="nofollow" title="Ir a Nuestra Firma" class="read-more-box">Ver más <span class="fa fa-arrow-right fa-fw"></span></a>
@@ -69,7 +75,7 @@
         	<div class="col-md-5 col-xs-6 col-esp half-box box area" style="background-image:url(<?php echo $midbg[0]?>); background-repeat: no-repeat; background-size: cover;">
             	<div class="col-md-7 clr-bg02 col-box">
                 	<h2><a href="<?php echo get_page_link(9)?>">Áreas de <br><strong>Práctica</strong></a></h2>
-                	<p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
+                	<p>Nueve áreas de práctica altamente especializadas</p>
                     <div class="pull-right">
                         <a href="<?php echo get_page_link(9)?>" class="read-more-box">Ver más <span class="fa fa-arrow-right fa-fw"></span></a>
                     </div>
@@ -102,8 +108,8 @@
                 <div class="inside" style="background-image: url(<?php echo $bigbg[0]?>);  background-repeat: no-repeat; background-size: cover;">
 
                     <div class="col-md-5 clr-bgop01 col-box">
-                        <h2><a href="<?php echo get_page_link(4)?>" rel="nofollow" title="Ir a Nuestra Firma">Nuestra <br><strong>Firma</strong></a></h2>
-                        <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
+                        <h2><a href="<?php echo get_page_link(4)?>" rel="nofollow" title="Ir a Nuestra Firma">Our<br><strong>Firm</strong></a></h2>
+                        <p></p>
                     </div>
 
                     <div class="pull-right">
@@ -115,8 +121,8 @@
 
             <div class="col-md-5 col-xs-6 col-esp half-box box area" style="background-image:url(<?php echo $midbg[0]?>); background-repeat: no-repeat; background-size: cover;">
                 <div class="col-md-7 clr-bg02 col-box">
-                    <h2><a href="<?php echo get_page_link(9)?>">Áreas de <br><strong>Práctica</strong></a></h2>
-                    <p>Nullam eros tortor, consectetur ut lacus et, venenatis mollis elit.</p>
+                    <h2><a href="<?php echo get_page_link(9)?>">Practice<br><strong>Areas</strong></a></h2>
+                    <p></p>
                     <div class="pull-right">
                         <a href="<?php echo get_page_link(9)?>" class="read-more-box">Ver más <span class="fa fa-arrow-right fa-fw"></span></a>
                     </div>
@@ -125,7 +131,7 @@
 
             <div class="col-md-5 col-xs-6 col-esp half-box box" style="background-image:url(<?php echo $midtbg[0]?>); background-repeat: no-repeat; background-size: cover; background-position: 30%;">
                 <div class="col-md-7 clr-bg03 col-box">
-                    <h2><a href="<?php echo get_page_link(11)?>"><strong>Abogados</strong></a></h2>
+                    <h2><a href="<?php echo get_page_link(11)?>"><strong>Team</strong></a></h2>
                     <div class="pull-right">
                         <a href="<?php echo get_page_link(11)?>" class="read-more-box">Ver más <span class="fa fa-arrow-right fa-fw"></span></a>
                     </div>
