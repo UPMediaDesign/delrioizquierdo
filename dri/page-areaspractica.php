@@ -8,7 +8,7 @@ Template Name: Áreas de Práctica
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'footimage' ); ?>
 
-<main class="container principal">
+<main class="megacontainer principal">
   <div class="row">
     <div class="col-md-10 col-md-offset-1 liner-bottom bajada">
 

@@ -9,6 +9,7 @@ add_image_size('staff', 385, 600, true );
 add_image_size('bigbox', 928, 560, true );
 add_image_size('mediumbox', 667, 278,true );
 add_image_size('related', 315, 100, true );
+add_image_size('singleabogado', 385, 370, true );
 }
 /* 
 add_filter('image_size_names_choose', 'my_image_sizes');

@@ -3,7 +3,7 @@
 <?php $bgid = get_post_thumbnail_id()?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'lawyerphoto' ); ?>
 
-<main class="container principal">
+<main class="megacontainer principal">
     <div class="row">
 
         <div class="col-md-10 col-md-offset-1 liner-bottom bajada desktop">
@@ -11,7 +11,7 @@
                 <h3><?php echo get_field('cargo_abogado', $post->ID);?></h3>
         </div>
 
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-1 col-esp">
             <div id="breadcrumbs" class="hidden-xs">
                 <ul>
                     
@@ -44,9 +44,9 @@
         </div>
 */ ?>
 
-        <figure class="lawyer col-md-8 col-md-offset-2 lawyer-file col-esp clr-bg03">
+        <figure class="lawyer col-md-10 col-md-offset-1 lawyer-file col-esp clr-bg03">
             <!-- Visible en Desktop -->
-            <aside class="col-md-5 col-esp desktop">
+            <aside class="col-md-4 col-esp desktop">
                 <img src="<?php echo get_field('foto_perfil', $post->ID);?>" alt="<?php echo $post->post_title; ?>">
                 <figcaption class="clr-bg03 data">
                     <h2><?php echo $post->post_title;?></h2>   
@@ -55,7 +55,7 @@
                 </figcaption>
             </aside>
 
-            <figcaption class="col-md-7 col-esp info">
+            <figcaption class="col-md-8 col-esp info">
                 <div class="invite-area">
                     <div class="quote-text">
                         <p><?php echo get_field('parrafo_de_referencia', $post->ID);?></p>
@@ -65,7 +65,7 @@
                 
                 <div class="clear"></div>
                            
-                <div class="lawyer-file" style="margin:20px 20px 0 20px; padding-top: 20px">
+                <div class="lawyer-file" style="margin: 13px 20px 0 15px; padding-top: 10px;">
                 	<div class="row">
                 		
                 		<?php if(get_field('casa_estudios', $post->ID)){?>
@@ -96,7 +96,7 @@
 		
        
        <?php if(get_field('frase_destacada_socio')){?>
-        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row featured-quote" style="background-color: #2c3e50">
+        <div class="col-md-10 col-md-offset-1 col-sm-11 invite-area row featured-quote" style="background-color: #2c3e50">
         	
         		<?php echo get_field('frase_destacada_socio')?>	
         

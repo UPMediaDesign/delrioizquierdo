@@ -33,7 +33,7 @@ if ( have_posts() ) {
  		</div>
 */ ?>
 
-		<div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: 100%; min-height: 320px; background-repeat: no-repeat; background-position: center;">
+		<div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo get_field('imagen_destacada_interior', $post->ID);?>);background-size: 100%; min-height: 215px; background-repeat: no-repeat; background-position: center;">
 		    <h2><?php echo get_field('titular_bajada', $post->ID);?></h2>
 		    <h3><?php echo get_field('apoyo_bajada', $post->ID);?></h3>
 		</div>

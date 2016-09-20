@@ -8,7 +8,7 @@ Template Name: Abogados
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'footimage' ); ?>
 
-<main class="container principal">
+<main class="megacontainer principal">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1 liner-bottom bajada">
 
@@ -37,7 +37,7 @@ Template Name: Abogados
         <div class="col-md-9 col-xs 12 col-esp">
           <ul class="lawslide slider resp-clear">
             <?php $lawslide = 0;?>
-            <?php $lawyers = get_posts(array('post_type' => 'abogados', 'numberposts' => -1,  'suppress_filters' => 0))?>
+            <?php $lawyers = get_posts(array('post_type' => 'abogados', 'numberposts' => -1, 'orderby' => 'post_date', 'suppress_filters' => 0))?>
             <?php foreach($lawyers as $lawyer):?>
             <?php $lawslide++?>
             <li class="col-md-4 col-sm-6 col-xs-6 col-esp">
@@ -72,11 +72,11 @@ Template Name: Abogados
     	<div class="container">
         
         
-            <div class="clear separator"></div>
-            <div class="col-md-8 col-md-offset-2 col-esp">
+            <div class="clear miniseparator"></div>
+            <div class="col-md-12 col-esp">
 				<?php foreach($lawyers as $individuals):?>
                     
-                    <div class="col-md-4 col-xs-6 lawyerlist">
+                    <div class="col-md-2 col-xs-6 lawyerlist">
                         <a href="<?php echo get_permalink($individuals->ID)?>">
                             
                             <?php echo $individuals->post_title?>
@@ -87,12 +87,14 @@ Template Name: Abogados
                     
                 <?php endforeach;?>
             </div>
-            <div class="clear separator"></div>
+            <div class="clear miniseparator"></div>
         </div>
     	
         
     </div>
 </section>
+
+<?php /* ?>
 
 <section class="container">
     <div class="row">
@@ -107,6 +109,7 @@ Template Name: Abogados
     </div>
 </section>
 
+<?php */ ?>
 <script>
     // Este es script del slider, no lo borre 
     jQuery('.slider').bxSlider({
