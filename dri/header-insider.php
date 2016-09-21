@@ -84,7 +84,7 @@ jQuery(window).load(function() {
 </div>
 
 <nav class="navbar navbar-fixed-top insider-nav" role="navigation">
-    <div class="megacontainer">
+    <div class="container-fluid">
         <div class="row">
 
           <div class="navbar col-md-10 col-md-offset-1 col-xs-12 liner-bottom">

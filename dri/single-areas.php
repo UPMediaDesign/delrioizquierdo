@@ -3,7 +3,7 @@
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'headingarea' ); ?>
 
-<main class="container principal">
+<main class="container-fluid principal">
 	<div class="row">
         
 		<div class="col-md-10 col-md-offset-1 bajada">
@@ -45,7 +45,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo $bg[0]?>);background-size: cover; min-height: 320px; background-repeat: no-repeat; margin-top: 20px; background-position: center;">
+        <div class="col-md-12 intro-content col-esp" style="background-image:url(<?php echo $bg[0]?>);background-size: cover; min-height: 230px; background-repeat: no-repeat; margin-top: 10px; background-position: center;">
 		</div>
 
     </div>
@@ -54,33 +54,35 @@
 
 <div class="container">
     <div class="row">
-		<div class="clear separator"></div>
+		<div class="clear miniseparator"></div>
 		<div class="col-md-8 col-md-offset-2 hard-content">
         	<?php echo $post->post_content?>
         </div>
 
-        <div class="col-md-8 col-md-offset-2 col-sm-11 invite-area row">
-        	<div class="clr-bg03 invite-text">
-        		<p><?php echo $post->post_excerpt; ?></p>
-        	</div>
-        	
+        <?php /* ?>
+        <div class="col-md-4 col-sm-11 invite-area row">
+            <div class="clr-bg03 invite-text">
+                <p><?php echo $post->post_excerpt; ?></p>
+            </div>
         </div>
+        <?php */?>
 
 	</div>
 </div>
 
+<?php /* ?>
 <section class="container">
   <div class="row">
 
     <div class="col-md-8 col-md-offset-2">
 
         <h3 class="another">Otras Áreas</h3>
-		<ul class="slider single-areas">
+        <ul class="slider single-areas">
         <?php $areaslide = 0;?>
         <?php $areas = get_posts(array('post_type' => 'areas', 'numberposts' => -1, 'orderby' => 'rand' ,  'suppress_filters' => 0))?>
         <?php foreach($areas as $area):?>
         <?php $areaslide++?>
-		
+        
             <li>
                 <figure class="col-xs-12 col-esp related">
                     <a href="<?php echo get_permalink($area->ID)?>" rel="nofollow" alt="<?php echo $area->post_title?>">
@@ -92,11 +94,12 @@
                 </figure>
             </li>
         <?php endforeach;?>
-		</ul>
+        </ul>
     </div>
 
   </div>
 </section>
+<?php */ ?>
 
 <script>
     // Este es script del slider, no lo borre 

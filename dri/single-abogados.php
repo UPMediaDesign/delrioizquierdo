@@ -3,7 +3,7 @@
 <?php $bgid = get_post_thumbnail_id()?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'lawyerphoto' ); ?>
 
-<main class="megacontainer principal">
+<main class="container-fluid principal">
     <div class="row">
 
         <div class="col-md-10 col-md-offset-1 liner-bottom bajada desktop">
@@ -65,7 +65,7 @@
                 
                 <div class="clear"></div>
                            
-                <div class="lawyer-file" style="margin: 13px 20px 0 15px; padding-top: 10px;">
+                <div class="lawyer-file" style="margin: 13px 15px 0 15px; padding-top: 10px;">
                 	<div class="row">
                 		
                 		<?php if(get_field('casa_estudios', $post->ID)){?>

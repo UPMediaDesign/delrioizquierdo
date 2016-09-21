@@ -8,7 +8,7 @@ Template Name: Áreas de Práctica
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'footimage' ); ?>
 
-<main class="megacontainer principal">
+<main class="container-fluid principal">
   <div class="row">
     <div class="col-md-10 col-md-offset-1 liner-bottom bajada">
 
@@ -24,7 +24,7 @@ Template Name: Áreas de Práctica
   </div>
 </main>
 
-<section class="megacontainer area">
+<section class="container-fluid area">
     <div class="row">
 
         <div class="col-md-3 col-xs-12 col-esp clr-bggr01 area quote only-mobile">

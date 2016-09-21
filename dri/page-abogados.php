@@ -8,7 +8,7 @@ Template Name: Abogados
 <?php $bgid = get_post_thumbnail_id($post->ID)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'footimage' ); ?>
 
-<main class="megacontainer principal">
+<main class="container-fluid principal">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1 liner-bottom bajada">
 
@@ -24,7 +24,7 @@ Template Name: Abogados
 	</div>
 </main>
 
-<section class="megacontainer law">
+<section class="container-fluid law">
     <div class="row">
 
         <div class="col-md-3 col-xs-12 col-esp clr-bggr01 area quote only-mobile">
@@ -68,13 +68,14 @@ Template Name: Abogados
 
         </div>
     </div>
+<?php /*?>
     <div class="row">
-    	<div class="container">
+      <div class="container">
         
         
             <div class="clear miniseparator"></div>
             <div class="col-md-12 col-esp">
-				<?php foreach($lawyers as $individuals):?>
+        <?php foreach($lawyers as $individuals):?>
                     
                     <div class="col-md-2 col-xs-6 lawyerlist">
                         <a href="<?php echo get_permalink($individuals->ID)?>">
@@ -87,11 +88,13 @@ Template Name: Abogados
                     
                 <?php endforeach;?>
             </div>
-            <div class="clear miniseparator"></div>
+            
         </div>
-    	
+      
         
     </div>
+<?php */?>
+<div class="clear miniseparator"></div>
 </section>
 
 <?php /* ?>

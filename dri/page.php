@@ -23,7 +23,7 @@ if ( have_posts() ) {
 	</div>
 </main>
 
-<div class="nocontainer">
+<div class="container-fluid">
 	<div class="row">
 
 <?php /*
@@ -41,7 +41,7 @@ if ( have_posts() ) {
 	</div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="title-container">
 			<h1 class="titular-page"><?php echo $post->post_title?></h1>
